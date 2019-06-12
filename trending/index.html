@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<!--meta codigo importante par ala pagina en los buscadores y para traer la biblioteca de bootstrap-->
+		<title>HUMPR - trending -</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		<meta name="description" content="layout for HUMPR's trending page, where the moste liked posts are, they are ordered from most lo least liked, and it refreshes every day. We hope to include categories in a sub navbar space, but it is not clearly defined yet. The friend bar dissapears, because this page is all about the content and finding the popular stuff.">
+		<meta name="keywords" content="social media, humpr, design, chat, blogs, photos, images, writing, opinion, new media, open-source, community-based">
+		<meta name="author" content="Nicolas Gomez">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link rel="shortcut icon" type="image/png" href="../imgs/Logo_final_HUMPR_final.png">
+<!--codigo para poner el logo pequeño en las tabs del navegador-->
+	</head>
+	<style type="text/css">
+		
+		body{
+			background-color: #fcf8f7;
+			position: relative;
+			margin: 10%;
+		}
+		
+		.navbar-default{
+			background-color: #8f5bf1;
+			background-image: linear-gradient(#66bef4, #8f5bf1);
+			border-color: #8f5bf1;
+		}	
+		
+		.navbar-default .navbar-brand{
+			color: #ffffff;
+		}
+		
+		.navbar-default .navbar-nav > li > a{
+			color: #ffffff;
+		}
+		
+		.navbar-default .navbar-nav > .active > a{
+			color: #000000;
+			background-color: #fcf8f7;
+		}
+		
+		.btn-default{
+			color: #000000;
+			border-color: #000000;
+		}
+		
+		.active{
+			background-color: #66bef4 !important;
+		}
+		
+		input{
+			line-height: 27px;
+		}
+		
+		button, input, optgroup, select, textarea{
+			border-radius: 6px 0px 0px 6px;
+			background-color: #fcf8f7;
+			border-color: #000000;
+		}
+		
+		.container{
+			margin-top:10%;
+			margin-right: 10%;
+			margin-left: 10%;
+			margin-bottom: 5%;
+			padding: 30px;
+		}
+		
+		.pager li > a{
+			display: inline-block;
+			background-color: #3082d6;
+			border-radius: 7px;
+			border: 1px solid #dddddd;
+		}
+		
+		a{
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		.jumbotron{
+			background-color: #fcf8f7;
+		}
+	</style>
+<!--los estilos especificos con localizaciones extrañas se encontraron por medio de inspeccionar el elemento en un navegador-->
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#naB">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">HUMPR</a>
+				</div>
+				<div class="collapse navbar-collapse" id="naB">
+					<ul id="nabtop" class="nav navbar-nav">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="../profile/index.html"><span class="glyphicon glyphicon-user"></span> ME <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="../profile/index.html">Profile</a></li>
+								<li><a href="#">Settings</a></li>
+								<li><a href="#">Privacy</a></li>
+							</ul>
+						</li>
+						<li><a href="../upload/index.html"> UPLOAD <span class="glyphicon glyphicon-upload"></span></a></li>
+						<li><a href="../main/index.html">Home <span class="glyphicon glyphicon-home"></span></a></li>
+						<li class="active"><a href="index.html"><span class="glyphicon glyphicon-fire"></span> Trending <span class="glyphicon glyphicon-fire"></span></a></li>
+					</ul>
+				<form class="navbar-form navbar-right" action="/action_page.php">
+					<div class="input-group">
+						<input type="text" name="form-control" placeholder="(0)">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</nav>
+<!--layout basico de el navbar, solo cambia el activo en cada pagina.-->
+		<div class="jumbotron">
+			<h1>The Hot Stuff</h1>
+		</div>
+<!--Titulo para lammar la atencion y dejar espacios blancos-->
+
+		<br>
+<!--division por rows y columnas para darle el layout basico-->
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/2.JPG">
+							<img src="../imgs/2.JPG" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">100,000 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump_full.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Look for a number.</p>
+						</div>	
+					</div>
+				</div>
+<!--codigo basico para cada post, se usa thumbnail para darle la estetica de galeria-->
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/big_yosemite.jpg">
+							<img src="../imgs/big_yosemite.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_lines.png" style="max-height: 20px">82,670 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Nature is surprising.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/indus_seattle.jpg">
+							<img src="../imgs/indus_seattle.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">67,050</span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Machines can look good too.</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/fish.jpg">
+							<img src="../imgs/fish.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">65,004 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump_full.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>The colors in this pic are astonishing.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/san_fran_high.jpg">
+							<img src="../imgs/san_fran_high.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_lines.png" style="max-height: 20px">59,874 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Finally back home.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/trump_bar.jpg">
+							<img src="../imgs/trump_bar.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">52,056</span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Hey liberal, I don't think Obama had his own chocolate bar. HAHAHAHAHAH!</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/pool.jpg">
+							<img src="../imgs/pool.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">50,073 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump_full.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Wanna come and play?</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/seattle.jpg">
+							<img src="../imgs/seattle.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_lines.png" style="max-height: 20px">48,740 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Seattle night shots.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/horizon.jpg">
+							<img src="../imgs/horizon.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">46,656</span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>What does the future hold?</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/flor.jpg">
+							<img src="../imgs/flor.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">40,980 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump_full.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Argentina is pretty dope.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/d_man.jpg">
+							<img src="../imgs/d_man.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_lines.png" style="max-height: 20px">37,785 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Felt cute, might delete later.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/fountain.jpg">
+							<img src="../imgs/fountain.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">35,759</span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>playing with the contrast a bit.</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/the_light.jpg">
+							<img src="../imgs/the_light.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">32,500 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump_full.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>This is what the light at the end of the tunnel looks like.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/olympia_bay.jpg">
+							<img src="../imgs/olympia_bay.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_lines.png" style="max-height: 20px">29,970 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Sometimes you just want to sail away for ever.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/yosemite.jpg">
+							<img src="../imgs/yosemite.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">27,650</span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Y'all don't imagine the lenghts I had to go to to take this pic.</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/furher_car.jpg">
+							<img src="../imgs/furher_car.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">24,055 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump_full.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Anyone like oldies?</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/Arby.jpg">
+							<img src="../imgs/Arby.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_lines.png" style="max-height: 20px">20,666 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>A tribute to Halo... Wait, why is it horizontal? ...</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/los_glaciares.jpg">
+							<img src="../imgs/los_glaciares.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">19,069</span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Me being me, and going to the coldest places possible.</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/isla_faro.jpg">
+							<img src="../imgs/isla_faro.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">18,909 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump_full.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Literaly at the end of the world.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/landscape_olimpia.jpg">
+							<img src="../imgs/landscape_olimpia.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_lines.png" style="max-height: 20px">17,707 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Peace of mind, Peace of life.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/pinguinos2.jpg">
+							<img src="../imgs/pinguinos2.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">16,550</span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Penguins are kinda hot, I mean where is the snow.</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+
+			<ul class="pager">
+			<li class="disabled"><a href="#">Previous</a></li>
+			<li><a href="index2.html">Next</a></li>
+			</ul>
+
+<!--uso de paginacion para evitar el scroll sin fin que lleva a perder tiempo-->
+
+	</body>
+</html>

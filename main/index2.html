@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>HUMPR - home -</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		<meta name="description" content="layout of HUMPR's main page, everyones first experience when opening HUMPR it is based on chronological order, so you dont miss the posts from people you care about, also it uses a pagination system to stop the endless scrolling that wastes most of your time. It also has a friends bar at the side, so you can have easy acces to your chats and a faster connection to your friends.>
+		<meta name="keywords" content="social media, humpr, design, chat, blogs, photos, images, writing, opinion, new media, open-source, community-based">
+		<meta name="author" content="Nicolas Gomez">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link rel="shortcut icon" type="image/png" href="../imgs/Logo_final_HUMPR_final.png">
+	</head>
+
+	<style type="text/css">
+		.affix{
+			top: 50px;
+			z-index: 9999 !important;
+		}
+		#nabtop{
+			background-color: #8f5bf1;
+			background-image: linear-gradient(#66bef4, #8f5bf1);
+			color: #ffffff;
+		}
+		.neu{
+			color: #000000 !important;
+		}
+		body{
+			background-color: #fcf8f7;
+			position: relative;
+		}
+		.navbar-default{
+			background-color: #8f5bf1;
+			background-image: linear-gradient(#66bef4, #8f5bf1);
+			border-color: #8f5bf1;
+		}
+		.active{
+			background-color: #66bef4 !important;
+		}
+		input{
+			line-height: 27px;
+		}
+		#frenbar{
+			position: fixed;
+			width: 10%;
+			min-width: 80px;
+			background-color: #8f5bf1;
+		}
+		.navbar-default .navbar-brand{
+			color: #ffffff;
+		}
+		.navbar-default .navbar-nav > li > a{
+			color: #ffffff;
+		}
+		.navbar-default .navbar-nav > .active > a{
+			color: #000000;
+			background-color: #fcf8f7;
+		}
+		.btn-default{
+			color: #000000;
+			border-color: #000000;
+		}
+		button, input, optgroup, select, textarea{
+			border-radius: 7px 0px 0px 7px;
+			background-color: #fcf8f7;
+			border-color: #000000;
+		}
+		a{
+			color: #ffffff;
+			text-decoration: none;
+		}
+		.pager li > a{
+			display: inline-block;
+			background-color: #3082d6;
+			border-radius: 7px;
+			border: 1px solid #dddddd;
+		}
+		div.thumbnail{
+			padding-top: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 0px;
+			border-width: 1px;
+			border-radius: 7px;
+		}
+		.thumbnail .caption{
+			padding: 7px 2px 7px 2px;
+			color: #000000;
+		}
+		.container{
+			margin-top: 5%;
+		}
+	</style>
+	<body>
+		<p>
+			<br><br>
+		</p>
+		<!--estructura para mantener bajar los contenidos-->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#naB">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">HUMPR</a>
+				</div>
+				<div class="collapse navbar-collapse" id="naB">
+					<ul id="nabtop" class="nav navbar-nav">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="../profile/index.html"><span class="glyphicon glyphicon-user"></span> ME <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="../profile/index.html">Profile</a></li>
+								<li><a href="#">Settings</a></li>
+								<li><a href="#">Privacy</a></li>
+							</ul>
+						</li>
+						<li><a href="../upload/index.html">UPLOAD <span class="glyphicon glyphicon-upload"></span></a></li>
+						<li class="active"><a href="#">Home <span class="glyphicon glyphicon-home"></span></a></li>
+						<li><a href="../trending/index.html"><span class="glyphicon glyphicon-fire"></span> Trending <span class="glyphicon glyphicon-fire"></span></a></li>
+					</ul>
+				<form class="navbar-form navbar-right" action="/action_page.php">
+					<div class="input-group">
+						<input type="text" name="form-control" placeholder="(0)">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</nav>
+		<div id="frenbar" class="container-fluid">
+			<ul class="nav nav-pills nav-stacked">
+				<br>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</ul>
+		</div>
+		
+		<div class="row">
+				<br><br>
+				<div class="col-md-offset-2 col-md-4 col-xs-offset-3 col-xs-8">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/caballo.jpg">
+							<img src="../imgs/caballo.jpg" style="width: 100% height:200px;">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">1000 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump_full.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Im somewhat of a cowboy myself.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-offset-1 col-md-4 col-xs-offset-3 col-xs-8">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/big_spidy.jpg">
+							<img src="../imgs/big_spidy.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_lines.png" style="max-height: 20px">54 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Hey, I found spiderman.</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-4 col-xs-offset-3 col-xs-8">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/goin_off.jpg">
+							<img src="../imgs/goin_off.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">1000 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump_full.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>A hint of hope in a sea of uncertainty.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-offset-1 col-md-4 col-xs-offset-3 col-xs-8">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/fair.jpg">
+							<img src="../imgs/fair.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_lines.png" style="max-height: 20px">54 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Who knew state fairs could be this fun?</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-4 col-xs-offset-3 col-xs-8">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/yosemite_fall.jpg">
+							<img src="../imgs/yosemite_fall.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">1000 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump_full.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Look a rainbow!</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-offset-1 col-md-4 col-xs-offset-3 col-xs-8">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/las_flores.jpg">
+							<img src="../imgs/las_flores.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_lines.png" style="max-height: 20px">54 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>kinda looks like an octopus.</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-4 col-xs-offset-3 col-xs-8">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/muchachos_a_beber.jpg">
+							<img src="../imgs/muchachos_a_beber.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">1000 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump_full.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Me and the boys going to drink.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-offset-1 col-md-4 col-xs-offset-3 col-xs-8">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/plato.jpg">
+							<img src="../imgs/plato.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_lines.png" style="max-height: 20px">54 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Finnaly done with the edible dishes! What do you think about the project?</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-4 col-xs-offset-3 col-xs-8">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/PrOpIeTaRiOdElAcAmIoNeTa.png">
+							<img src="../imgs/PrOpIeTaRiOdElAcAmIoNeTa.png" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">1000 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump_full.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>OwNeR oF tHe TrUcK.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-offset-1 col-md-4 col-xs-offset-3 col-xs-8">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/4chan.jpg">
+							<img src="../imgs/4chan.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_lines.png" style="max-height: 20px">54 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Don´t @ me.</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-4 col-xs-offset-3 col-xs-8">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/chadvirgin.png">
+							<img src="../imgs/chadvirgin.png" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">1000 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump_full.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>And Y'all still want to go to Mars, right?</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-offset-1 col-md-4 col-xs-offset-3 col-xs-8">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/carrier_exit.jpg">
+							<img src="../imgs/carrier_exit.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_lines.png" style="max-height: 20px">54 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>One could argue that carriers are like emergency exits out of a country.</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-2 col-md-4 col-xs-offset-3 col-xs-8">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/chinatown.jpg">
+							<img src="../imgs/chinatown.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_colour.png" style="max-height: 20px">1000 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump_full.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Dope AF.</p>
+						</div>	
+					</div>
+				</div>
+				<div class="col-md-offset-1 col-md-4 col-xs-offset-3 col-xs-8">
+					<div class="thumbnail">
+						<div>
+							<p><span class="glyphicon glyphicon-user"></span>Username
+							<span class="glyphicon glyphicon-flag"></span></p>
+						</div>
+						<a href="../imgs/land_jelly.jpg">
+							<img src="../imgs/land_jelly.jpg" style="width: 100%">
+						</a>
+						<div class="caption">
+							<span class="glyphicon"><img src="../imgs/heart_lines.png" style="max-height: 20px">54 </span>
+							<span class="glyphicon"><img src="../imgs/re_hump.png" style="max-height: 20px"> </span>
+							<span class="glyphicon glyphicon-comment"> </span>
+							<span class="glyphicon glyphicon-fire"> </span>
+							<span class="glyphicon glyphicon-tower"> </span>
+							<span class="glyphicon glyphicon-eye-open"> </span>
+							
+							<p>Not so strong now, huh?</p>
+						</div>	
+					</div>
+				</div>
+			</div>	
+		<ul class="pager">
+			<li><a href="index.html">Previous</a></li>
+			<li><a href="#">Next</a></li>
+		</ul>
+	</body>
+</html>
