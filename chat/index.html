@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+<!--meta codigo importante para la pagina en los buscadores y para traer la biblioteca de bootstrap-->
+		<title>HUMPR - chat -</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="HUMPR's chat system, friends are separated from followers with the intent of giving friends a more intimate conection and more options.">
+		<meta name="keywords" content="social media, humpr, design, chat, blogs, photos, images, writing, opinion, new media, open-source, community-based">
+		<meta name="author" content="Nicolas Gomez">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link rel="shortcut icon" type="image/png" href="../imgs/Logo_final_HUMPR_final.png">
+<!--codigo para poner el logo pequeño en las tabs del navegador-->
+	</head>
+	
+	<style type="text/css">
+		#nabtop{
+			background-color: #8f5bf1;
+			background-image: linear-gradient(#66bef4, #8f5bf1);
+			color: #ffffff;
+		}
+		
+		.neu{
+			color: #ffffff !important;
+		}
+		
+		body{
+			background-color: #fcf8f7;
+			position: relative;
+		}
+		
+		.navbar-default{
+			background-color: #8f5bf1;
+			background-image: linear-gradient(#66bef4, #8f5bf1);
+			border-color: #8f5bf1;
+		}
+		
+		.active{
+			background-color: #ffffff !important;
+			color: #3082d6;
+		}
+		
+		input{
+			line-height: 27px;
+		}
+		
+		.navbar-default .navbar-brand{
+			color: #ffffff;
+		}
+		
+		.navbar-default .navbar-nav > li > a{
+			color: #ffffff;
+		}
+		
+		.navbar-default .navbar-nav > .active > a{
+			color: #000000;
+			background-color: #fcf8f7;
+		}
+		
+		.btn-default{
+			color: #000000;
+			border-color: #000000;
+		}
+		
+		button, input, optgroup, select, textarea{
+			border-radius: 7px 0px 0px 7px;
+			background-color: #fcf8f7;
+			border-color: #000000;
+		}
+
+		#frenbar{
+			position: fixed;
+			width: 20%;
+			min-width: 100px;
+			background-color: #8f5bf1;
+		}
+
+		a{
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		.well{
+			padding-left: 25%;
+			padding-right: 25%;
+			max-height: 1200px;
+			min-height: 700px;
+			margin-left: 35%;
+			margin-right: 15%;
+			margin-top: 5%;
+			background-color: #ffffff;
+			border-radius: 7px;
+		}
+
+		#chat{
+			margin-left: 35%;
+			margin-right: 15%;
+			border-radius: 7px;
+		}
+	</style>
+	
+	<body>
+
+<!--simulacion visual de lo que deberia ser el chat.-->
+
+		<p>
+			<br><br>
+		</p>
+		
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#naB">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">HUMPR</a>
+				</div>
+				<div class="collapse navbar-collapse" id="naB">
+					<ul id="nabtop" class="nav navbar-nav">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="../profile/index.html"><span class="glyphicon glyphicon-user"></span> ME <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="../profile/index.html">Profile</a></li>
+								<li><a href="#">Settings</a></li>
+								<li><a href="#">Privacy</a></li>
+							</ul>
+						</li>
+						<li><a href="../upload/index.html">UPLOAD <span class="glyphicon glyphicon-upload"></span></a></li>
+						<li><a href="../main/index.html">Home <span class="glyphicon glyphicon-home"></span></a></li>
+						<li><a href="../trending/index.html"><span class="glyphicon glyphicon-fire"></span> Trending <span class="glyphicon glyphicon-fire"></span></a></li>
+					</ul>
+				<form class="navbar-form navbar-right" action="/action_page.php">
+					<div class="input-group">
+						<input type="text" name="form-control" placeholder="(0)">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</nav>
+		
+		<div id="frenbar" class="container-fluid">
+			<ul class="nav nav-pills nav-stacked">
+				<br>
+				<li class="neu"><a href="../chat/index.html" class="active"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<li class="neu"><a href="../chat/index.html"><span class="glyphicon glyphicon-user"></span>Friend</a></li>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</ul>
+		</div>
+
+		<div class="well">
+			
+		</div>
+
+		<form action="/action_page.php">
+    		<div class="input-group" id="chat">
+      			<input type="text" class="form-control" placeholder="message" name="search">
+      			<div class="input-group-btn">
+        			<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-chevron-up"></i></button>
+      			</div>
+    		</div>
+  		</form>
+
+	</body>
+
+</html>
