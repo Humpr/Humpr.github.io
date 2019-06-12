@@ -1,0 +1,75 @@
+.card {
+    background-color: #fff;
+    border-radius: 1.25em;
+    border: 1px solid #707070;
+    margin: 4em 0;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    line-height: 3em;
+    margin: 1em 2em;
+}
+
+.cardProfileIconContainer {
+    margin: 0 1em 0 0;
+}
+
+.cardProfileIcon {
+    cursor: pointer;
+    display: block;
+    height: 3em;
+    width: 3em;
+    border: 2px solid #707070;
+    border-radius: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.cardUername {
+    font-weight: 700;
+    width: 100%;
+    text-align: left;
+}
+
+.cardIcons {
+    display: flex;
+    width: 4em;
+    justify-content: space-between;
+}
+
+.cardContentContainer {
+    border: 1px solid #c0c0c0;
+    background-color: pink;
+    min-height: calc(10em + 10vmin);
+    margin: 1em 2em;
+}
+
+.cardDescription {
+    margin: 1em 2em;
+    text-align: justify;
+}
+
+.cardTags {
+    margin: 0 2em 1em 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardTag {
+    color: #909090;
+    font-weight: 100;
+    text-align: left;
+    flex-grow: 1;
+    margin: 0 0.25em 0 0.25em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.cardTag:hover {
+    color: #707070;
+    text-decoration: underline;
+}

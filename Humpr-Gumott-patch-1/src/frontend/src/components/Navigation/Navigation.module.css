@@ -1,0 +1,28 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    font-family: hwt-artz, sans-serif;
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+    margin: 0.75em 0.75em;
+    padding: 0.24em 0.24em 0.12em 0.24em;
+    font-size: 1.5em;
+    color: #707070;
+    cursor: pointer;
+    border-radius: 0.3em;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: #69b9f3;
+    color: #303030;
+}
+
+.link.active {
+    border: 2px solid #bfbfbf;
+    padding: calc(0.24em - 2px) calc(0.24em - 2px) calc(0.12em - 2px) calc(0.24em - 2px);
+}

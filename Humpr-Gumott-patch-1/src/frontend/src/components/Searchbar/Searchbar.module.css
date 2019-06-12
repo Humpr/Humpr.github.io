@@ -1,0 +1,12 @@
+.searchbar {
+    border: 1px solid #707070;
+    height: 2.5em;
+    width: 24em;
+    margin: 0.5em 0 0 0;
+    padding: 0.5em;
+}
+
+.searchbar::placeholder {
+    color: #707070;
+    font-family: hwt-artz, sans-serif;
+}

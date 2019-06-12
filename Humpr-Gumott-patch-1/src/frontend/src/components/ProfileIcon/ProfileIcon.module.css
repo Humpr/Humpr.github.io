@@ -1,0 +1,8 @@
+.img {
+    border: 1px solid #707070;
+    border-radius: 100%;
+    cursor: pointer;
+    height: 4em;
+    width: 4em;
+    display: block;
+}

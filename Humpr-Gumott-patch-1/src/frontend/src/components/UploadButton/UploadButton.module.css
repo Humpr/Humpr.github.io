@@ -1,0 +1,33 @@
+.container {
+    height: 4em;
+    width: 4em;
+}
+
+.input {
+    height: 0.1px;
+    width: 0.1px;
+    opacity: 0.0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.label {
+    box-sizing: border-box;
+    border: 0px solid #69b9f3;
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+    height: 4em;
+    width: 4em;
+    background-image: url("./upload_icon.png");
+    background-size: 100%;
+    transition: all 0.1s ease-in-out;
+}
+
+.label:hover {
+    height: calc(4em - 2px);
+    width: calc(4em - 2px);
+    border: 2px solid #69b9f3;
+    background-color: #69b9f3;
+}

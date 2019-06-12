@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em 1em;
+    box-sizing: border-box;
+    font-family: hwt-artz, sans-serif;
+}
+
+.logo {
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+}

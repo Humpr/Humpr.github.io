@@ -1,0 +1,26 @@
+.storiesProfileContainer {
+    margin: 1em 0.75em;
+}
+
+.storiesProfileContainer:first-of-type {
+    margin: 1em 0.75em 1em 0;
+}
+
+.storiesProfile {
+    cursor: pointer;
+    display: block;
+    height: 4em;
+    width: 4em;
+    border: 2px solid #707070;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+.storiesProfile.storieAvailable {
+    border: 2px dashed #707070;
+}
+
+.storiesProfile.storieUnavailable {
+    border: 2px solid #707070;
+    opacity: 0.8;
+}
