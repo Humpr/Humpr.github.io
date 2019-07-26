@@ -1,0 +1,1561 @@
+/*example posts*/
+#highest_reaction_postID_01{ /*rectangle with highest reaction*/
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Twemoji_1f600.svg/600px-Twemoji_1f600.svg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 3px;
+    background-color: #dedede;
+    border: black dashed 1px;
+  }
+  #reactMenuContainer_postID_01{
+    display: none;
+  }
+  #flag_postID_01{
+    background-image: url("https://image.flaticon.com/icons/svg/148/148882.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #A08ABF;
+    border: #dedede dashed 1px;
+  }
+  #flagMenu_postID_01 button{
+    background-color: #A08ABF;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+  }
+  #flagMenu_postID_01{
+    position: relative;
+    top: 1px;
+    width: 100%;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    display: none;
+  }
+  #verify_postID_01{
+    background-image: url("https://image.flaticon.com/icons/svg/59/59508.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #4BBF5C;
+    border: #dedede dashed 1px;
+  }
+  #verifyMenu_postID_01 button{
+    background-color: #4BBF5C;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: center;
+  }
+  #verifyMenu_postID_01{
+    display: none;
+    position: relative;
+    top: 1px;
+    width: 100%;
+    background-color: #dedede;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+  }
+  #emote_postID_01{
+    background-image: url("http://cdn.onlinewebfonts.com/svg/download_201721.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #67BEF4;
+    border: #dedede dashed 1px;
+    z-index: 1;
+  }
+  #emoteMenu_postID_01 button{
+    background-color: #67BEF4;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+    z-index: 1;
+  }
+  #emoteMenu_postID_01{
+    position: relative;
+    top: 1px;
+    width: auto;
+    height: auto;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    z-index: 1;
+    display: none;
+  }
+  
+  
+  #highest_reaction_postID_02{ /*rectangle with highest reaction*/
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Twemoji_1f600.svg/600px-Twemoji_1f600.svg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 3px;
+    background-color: #dedede;
+    border: black dashed 1px;
+  }
+  #reactMenuContainer_postID_02{
+    display: none;
+  }
+  #flag_postID_02{
+    background-image: url("https://image.flaticon.com/icons/svg/148/148882.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #A08ABF;
+    border: #dedede dashed 1px;
+  }
+  #flagMenu_postID_02 button{
+    background-color: #A08ABF;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+  }
+  #flagMenu_postID_02{
+    position: relative;
+    top: 1px;
+    width: 100%;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    display: none;
+  }
+  #verify_postID_02{
+    background-image: url("https://image.flaticon.com/icons/svg/59/59508.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #4BBF5C;
+    border: #dedede dashed 1px;
+  }
+  #verifyMenu_postID_02 button{
+    background-color: #4BBF5C;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: center;
+  }
+  #verifyMenu_postID_02{
+    display: none;
+    position: relative;
+    top: 1px;
+    width: 100%;
+    background-color: #dedede;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+  }
+  #emote_postID_02{
+    background-image: url("http://cdn.onlinewebfonts.com/svg/download_201721.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #67BEF4;
+    border: #dedede dashed 1px;
+    z-index: 1;
+  }
+  #emoteMenu_postID_02 button{
+    background-color: #67BEF4;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+    z-index: 1;
+  }
+  #emoteMenu_postID_02{
+    position: relative;
+    top: 1px;
+    width: auto;
+    height: auto;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    z-index: 1;
+    display: none;
+  }
+  
+  
+  #highest_reaction_postID_03{ /*rectangle with highest reaction*/
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Twemoji_1f600.svg/600px-Twemoji_1f600.svg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 3px;
+    background-color: #dedede;
+    border: black dashed 1px;
+  }
+  #reactMenuContainer_postID_03{
+    display: none;
+  }
+  #flag_postID_03{
+    background-image: url("https://image.flaticon.com/icons/svg/148/148882.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #A08ABF;
+    border: #dedede dashed 1px;
+  }
+  #flagMenu_postID_03 button{
+    background-color: #A08ABF;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+  }
+  #flagMenu_postID_03{
+    position: relative;
+    top: 1px;
+    width: 100%;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    display: none;
+  }
+  #verify_postID_03{
+    background-image: url("https://image.flaticon.com/icons/svg/59/59508.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #4BBF5C;
+    border: #dedede dashed 1px;
+  }
+  #verifyMenu_postID_03 button{
+    background-color: #4BBF5C;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: center;
+  }
+  #verifyMenu_postID_03{
+    display: none;
+    position: relative;
+    top: 1px;
+    width: 100%;
+    background-color: #dedede;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+  }
+  #emote_postID_03{
+    background-image: url("http://cdn.onlinewebfonts.com/svg/download_201721.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #67BEF4;
+    border: #dedede dashed 1px;
+    z-index: 1;
+  }
+  #emoteMenu_postID_03 button{
+    background-color: #67BEF4;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+    z-index: 1;
+  }
+  #emoteMenu_postID_03{
+    position: relative;
+    top: 1px;
+    width: auto;
+    height: auto;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    z-index: 1;
+    display: none;
+  }
+  
+  
+  #highest_reaction_postID_04{ /*rectangle with highest reaction*/
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Twemoji_1f600.svg/600px-Twemoji_1f600.svg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 3px;
+    background-color: #dedede;
+    border: black dashed 1px;
+  }
+  #reactMenuContainer_postID_04{
+    display: none;
+  }
+  #flag_postID_04{
+    background-image: url("https://image.flaticon.com/icons/svg/148/148882.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #A08ABF;
+    border: #dedede dashed 1px;
+  }
+  #flagMenu_postID_04 button{
+    background-color: #A08ABF;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+  }
+  #flagMenu_postID_04{
+    position: relative;
+    top: 1px;
+    width: 100%;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    display: none;
+  }
+  #verify_postID_04{
+    background-image: url("https://image.flaticon.com/icons/svg/59/59508.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #4BBF5C;
+    border: #dedede dashed 1px;
+  }
+  #verifyMenu_postID_04 button{
+    background-color: #4BBF5C;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: center;
+  }
+  #verifyMenu_postID_04{
+    display: none;
+    position: relative;
+    top: 1px;
+    width: 100%;
+    background-color: #dedede;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+  }
+  #emote_postID_04{
+    background-image: url("http://cdn.onlinewebfonts.com/svg/download_201721.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #67BEF4;
+    border: #dedede dashed 1px;
+    z-index: 1;
+  }
+  #emoteMenu_postID_04 button{
+    background-color: #67BEF4;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+    z-index: 1;
+  }
+  #emoteMenu_postID_04{
+    position: relative;
+    top: 1px;
+    width: auto;
+    height: auto;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    z-index: 1;
+    display: none;
+  }
+  
+  
+  #highest_reaction_postID_05{ /*rectangle with highest reaction*/
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Twemoji_1f600.svg/600px-Twemoji_1f600.svg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 3px;
+    background-color: #dedede;
+    border: black dashed 1px;
+  }
+  #reactMenuContainer_postID_05{
+    display: none;
+  }
+  #flag_postID_05{
+    background-image: url("https://image.flaticon.com/icons/svg/148/148882.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #A08ABF;
+    border: #dedede dashed 1px;
+  }
+  #flagMenu_postID_05 button{
+    background-color: #A08ABF;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+  }
+  #flagMenu_postID_05{
+    position: relative;
+    top: 1px;
+    width: 100%;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    display: none;
+  }
+  #verify_postID_05{
+    background-image: url("https://image.flaticon.com/icons/svg/59/59508.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #4BBF5C;
+    border: #dedede dashed 1px;
+  }
+  #verifyMenu_postID_05 button{
+    background-color: #4BBF5C;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: center;
+  }
+  #verifyMenu_postID_05{
+    display: none;
+    position: relative;
+    top: 1px;
+    width: 100%;
+    background-color: #dedede;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+  }
+  #emote_postID_05{
+    background-image: url("http://cdn.onlinewebfonts.com/svg/download_201721.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #67BEF4;
+    border: #dedede dashed 1px;
+    z-index: 1;
+  }
+  #emoteMenu_postID_05 button{
+    background-color: #67BEF4;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+    z-index: 1;
+  }
+  #emoteMenu_postID_05{
+    position: relative;
+    top: 1px;
+    width: auto;
+    height: auto;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    z-index: 1;
+    display: none;
+  }
+  
+  
+  
+  #highest_reaction_postID_06{ /*rectangle with highest reaction*/
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Twemoji_1f600.svg/600px-Twemoji_1f600.svg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 3px;
+    background-color: #dedede;
+    border: black dashed 1px;
+  }
+  #reactMenuContainer_postID_06{
+    display: none;
+  }
+  #flag_postID_06{
+    background-image: url("https://image.flaticon.com/icons/svg/148/148882.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #A08ABF;
+    border: #dedede dashed 1px;
+  }
+  #flagMenu_postID_06 button{
+    background-color: #A08ABF;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+  }
+  #flagMenu_postID_06{
+    position: relative;
+    top: 1px;
+    width: 100%;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    display: none;
+  }
+  #verify_postID_06{
+    background-image: url("https://image.flaticon.com/icons/svg/59/59508.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #4BBF5C;
+    border: #dedede dashed 1px;
+  }
+  #verifyMenu_postID_06 button{
+    background-color: #4BBF5C;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: center;
+  }
+  #verifyMenu_postID_06{
+    display: none;
+    position: relative;
+    top: 1px;
+    width: 100%;
+    background-color: #dedede;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+  }
+  #emote_postID_06{
+    background-image: url("http://cdn.onlinewebfonts.com/svg/download_201721.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #67BEF4;
+    border: #dedede dashed 1px;
+    z-index: 1;
+  }
+  #emoteMenu_postID_06 button{
+    background-color: #67BEF4;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+    z-index: 1;
+  }
+  #emoteMenu_postID_06{
+    position: relative;
+    top: 1px;
+    width: auto;
+    height: auto;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    z-index: 1;
+    display: none;
+  }
+  
+  
+  #highest_reaction_postID_07{ /*rectangle with highest reaction*/
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Twemoji_1f600.svg/600px-Twemoji_1f600.svg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 3px;
+    background-color: #dedede;
+    border: black dashed 1px;
+  }
+  #reactMenuContainer_postID_07{
+    display: none;
+  }
+  #flag_postID_07{
+    background-image: url("https://image.flaticon.com/icons/svg/148/148882.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #A08ABF;
+    border: #dedede dashed 1px;
+  }
+  #flagMenu_postID_07 button{
+    background-color: #A08ABF;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+  }
+  #flagMenu_postID_07{
+    position: relative;
+    top: 1px;
+    width: 100%;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    display: none;
+  }
+  #verify_postID_07{
+    background-image: url("https://image.flaticon.com/icons/svg/59/59508.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #4BBF5C;
+    border: #dedede dashed 1px;
+  }
+  #verifyMenu_postID_07 button{
+    background-color: #4BBF5C;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: center;
+  }
+  #verifyMenu_postID_07{
+    display: none;
+    position: relative;
+    top: 1px;
+    width: 100%;
+    background-color: #dedede;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+  }
+  #emote_postID_07{
+    background-image: url("http://cdn.onlinewebfonts.com/svg/download_201721.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #67BEF4;
+    border: #dedede dashed 1px;
+    z-index: 1;
+  }
+  #emoteMenu_postID_07 button{
+    background-color: #67BEF4;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+    z-index: 1;
+  }
+  #emoteMenu_postID_07{
+    position: relative;
+    top: 1px;
+    width: auto;
+    height: auto;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    z-index: 1;
+    display: none;
+  }
+  #highest_reaction_postID_07{ /*rectangle with highest reaction*/
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Twemoji_1f600.svg/600px-Twemoji_1f600.svg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 3px;
+    background-color: #dedede;
+    border: black dashed 1px;
+  }
+  #reactMenuContainer_postID_07{
+    display: none;
+  }
+  #flag_postID_07{
+    background-image: url("https://image.flaticon.com/icons/svg/148/148882.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #A08ABF;
+    border: #dedede dashed 1px;
+  }
+  #flagMenu_postID_07 button{
+    background-color: #A08ABF;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+  }
+  #flagMenu_postID_07{
+    position: relative;
+    top: 1px;
+    width: 100%;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    display: none;
+  }
+  #verify_postID_07{
+    background-image: url("https://image.flaticon.com/icons/svg/59/59508.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #4BBF5C;
+    border: #dedede dashed 1px;
+  }
+  #verifyMenu_postID_07 button{
+    background-color: #4BBF5C;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: center;
+  }
+  #verifyMenu_postID_07{
+    display: none;
+    position: relative;
+    top: 1px;
+    width: 100%;
+    background-color: #dedede;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+  }
+  #emote_postID_07{
+    background-image: url("http://cdn.onlinewebfonts.com/svg/download_201721.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #67BEF4;
+    border: #dedede dashed 1px;
+    z-index: 1;
+  }
+  #emoteMenu_postID_07 button{
+    background-color: #67BEF4;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+    z-index: 1;
+  }
+  #emoteMenu_postID_07{
+    position: relative;
+    top: 1px;
+    width: auto;
+    height: auto;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    z-index: 1;
+    display: none;
+  }
+  
+  
+  #highest_reaction_postID_08{ /*rectangle with highest reaction*/
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Twemoji_1f600.svg/600px-Twemoji_1f600.svg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 3px;
+    background-color: #dedede;
+    border: black dashed 1px;
+  }
+  #reactMenuContainer_postID_08{
+    display: none;
+  }
+  #flag_postID_08{
+    background-image: url("https://image.flaticon.com/icons/svg/148/148882.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #A08ABF;
+    border: #dedede dashed 1px;
+  }
+  #flagMenu_postID_08 button{
+    background-color: #A08ABF;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+  }
+  #flagMenu_postID_08{
+    position: relative;
+    top: 1px;
+    width: 100%;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    display: none;
+  }
+  #verify_postID_08{
+    background-image: url("https://image.flaticon.com/icons/svg/59/59508.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #4BBF5C;
+    border: #dedede dashed 1px;
+  }
+  #verifyMenu_postID_08 button{
+    background-color: #4BBF5C;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: center;
+  }
+  #verifyMenu_postID_08{
+    display: none;
+    position: relative;
+    top: 1px;
+    width: 100%;
+    background-color: #dedede;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+  }
+  #emote_postID_08{
+    background-image: url("http://cdn.onlinewebfonts.com/svg/download_201721.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #67BEF4;
+    border: #dedede dashed 1px;
+    z-index: 1;
+  }
+  #emoteMenu_postID_08 button{
+    background-color: #67BEF4;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+    z-index: 1;
+  }
+  #emoteMenu_postID_08{
+    position: relative;
+    top: 1px;
+    width: auto;
+    height: auto;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    z-index: 1;
+    display: none;
+  }
+  #highest_reaction_postID_08{ /*rectangle with highest reaction*/
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Twemoji_1f600.svg/600px-Twemoji_1f600.svg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 3px;
+    background-color: #dedede;
+    border: black dashed 1px;
+  }
+  #reactMenuContainer_postID_08{
+    display: none;
+  }
+  #flag_postID_08{
+    background-image: url("https://image.flaticon.com/icons/svg/148/148882.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #A08ABF;
+    border: #dedede dashed 1px;
+  }
+  #flagMenu_postID_08 button{
+    background-color: #A08ABF;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+  }
+  #flagMenu_postID_08{
+    position: relative;
+    top: 1px;
+    width: 100%;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    display: none;
+  }
+  #verify_postID_08{
+    background-image: url("https://image.flaticon.com/icons/svg/59/59508.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #4BBF5C;
+    border: #dedede dashed 1px;
+  }
+  #verifyMenu_postID_08 button{
+    background-color: #4BBF5C;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: center;
+  }
+  #verifyMenu_postID_08{
+    display: none;
+    position: relative;
+    top: 1px;
+    width: 100%;
+    background-color: #dedede;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+  }
+  #emote_postID_08{
+    background-image: url("http://cdn.onlinewebfonts.com/svg/download_201721.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%; 
+    border-radius: 5px 20px 5px;
+    background-color: #67BEF4;
+    border: #dedede dashed 1px;
+    z-index: 1;
+  }
+  #emoteMenu_postID_08 button{
+    background-color: #67BEF4;
+    border: none;
+    width: 100%;
+    min-width: 90px;
+    max-width: 160px;
+    min-height: 30px;
+    height: auto;
+    display: inline-flex;
+    border-radius: 3px;
+    color: white;
+    border: black solid 1px;
+    text-align: left;
+    z-index: 1;
+  }
+  #emoteMenu_postID_08{
+    position: relative;
+    top: 1px;
+    width: auto;
+    height: auto;
+    font-family: museo-sans-rounded;
+    font-weight: 300;
+    font-size: 1rem;
+    z-index: 1;
+    display: none;
+  }
+
+
+  #artistProfilePreview_postID_01{
+    z-index: 3;
+    display: flex;
+    height: 5%;
+    max-height: 52px; 
+    width: auto;
+    min-height: 50px;
+    margin: 3%;
+    background-color: whitesmoke;
+    border-radius: 20px 5px 5px 20px;
+}
+#artistProfilePreview_postID_01:hover{
+  transform: scale(1.1,1.1);
+  -webkit-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  -moz-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  -ms-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  -o-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+}
+#artistProfilePreview_postID_01 {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+#artistProfilePreview_postID_01::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #67BEF4;
+  transform-origin: center;
+  transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+#artistProfilePreview_postID_01:active {
+  cursor: pointer;
+  color: white;
+}
+
+#artistProfilePreview_postID_01:active::before {
+  transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+#artistProfilePreview_postID_01 {
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  
+}
+
+#artistProfilePreview_postID_01::after {
+  content: '';
+  z-index: -1;
+  background-color: hsla(0, 0%, 100%, 0.534);
+  position: absolute;
+  top: -50%;
+  bottom: -50%;
+  width: 1.25em;
+  transform: translate3d(-600%, 0, 0) rotate(35deg);
+}
+#artistProfilePreview_postID_01:hover{
+    overflow: hidden;
+}
+#artistProfilePreview_postID_01:hover::after {
+  transition: transform 0.45s ease-in-out;
+  transform: translate3d(800%, 0, 0) rotate(35deg);
+}
+@media screen and (max-width: 1080px) {
+  #artistProfilePreview_postID_01, #onlineStatus, #offlineStatus, #inactiveStatus{
+    border-radius: 50%;
+  }
+}
+
+#featuredPostsPreview_postID_01{
+  z-index: 2;
+  padding: 1%;
+  max-width: 600px;
+  height: auto;
+  max-height: 1920px;
+  position: relative;
+  background-color: white;
+  left: 235px;
+  bottom: 50px;
+  border-radius: 0px 5px 5px 5px;
+  display: none;
+  -webkit-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  -moz-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  -ms-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  -o-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+}
+#featuredPostsPreview_postID_01{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute; top: -9999px; left: -9999px;
+  display: block;
+}
+
+
+
+
+
+
+
+
+#artistProfilePreview_postID_02{
+  z-index: 3;
+  display: flex;
+  height: 5%;
+  max-height: 52px; 
+  width: auto;
+  min-height: 50px;
+  margin: 3%;
+  background-color: whitesmoke;
+  border-radius: 20px 5px 5px 20px;
+}
+#artistProfilePreview_postID_02:hover{
+transform: scale(1.1,1.1);
+-webkit-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-moz-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-ms-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-o-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+}
+#artistProfilePreview_postID_02 {
+position: relative;
+overflow: hidden;
+transition: color 0.4s ease-in-out;
+}
+
+#artistProfilePreview_postID_02::before {
+content: '';
+z-index: -1;
+position: absolute;
+top: 50%;
+left: 50%;
+width: 1em;
+height: 1em;
+border-radius: 50%;
+background-color: #67BEF4;
+transform-origin: center;
+transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+transition: transform 0.45s ease-in-out;
+}
+
+#artistProfilePreview_postID_02:active {
+cursor: pointer;
+color: white;
+}
+
+#artistProfilePreview_postID_02:active::before {
+transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+#artistProfilePreview_postID_02 {
+position: relative;
+font-size: inherit;
+font-family: inherit;
+cursor: pointer;
+
+}
+
+#artistProfilePreview_postID_02::after {
+content: '';
+z-index: -1;
+background-color: hsla(0, 0%, 100%, 0.534);
+position: absolute;
+top: -50%;
+bottom: -50%;
+width: 1.25em;
+transform: translate3d(-600%, 0, 0) rotate(35deg);
+}
+#artistProfilePreview_postID_02:hover{
+  overflow: hidden;
+}
+#artistProfilePreview_postID_02:hover::after {
+transition: transform 0.45s ease-in-out;
+transform: translate3d(800%, 0, 0) rotate(35deg);
+}
+@media screen and (max-width: 1080px) {
+#artistProfilePreview_postID_02, #onlineStatus, #offlineStatus, #inactiveStatus{
+  border-radius: 50%;
+}
+}
+
+#featuredPostsPreview_postID_02{
+z-index: 2;
+padding: 1%;
+max-width: 600px;
+height: auto;
+max-height: 1920px;
+position: relative;
+background-color: white;
+left: 235px;
+bottom: 50px;
+border-radius: 0px 5px 5px 5px;
+display: none;
+-webkit-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-moz-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-ms-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-o-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+}
+#featuredPostsPreview_postID_02{
+visibility: hidden;
+opacity: 0;
+position: absolute; top: -9999px; left: -9999px;
+display: block;
+}
+
+
+
+
+
+
+
+
+#artistProfilePreview_postID_03{
+  z-index: 3;
+  display: flex;
+  height: 5%;
+  max-height: 52px; 
+  width: auto;
+  min-height: 50px;
+  margin: 3%;
+  background-color: whitesmoke;
+  border-radius: 20px 5px 5px 20px;
+}
+#artistProfilePreview_postID_03:hover{
+transform: scale(1.1,1.1);
+-webkit-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-moz-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-ms-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-o-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+}
+#artistProfilePreview_postID_03 {
+position: relative;
+overflow: hidden;
+transition: color 0.4s ease-in-out;
+}
+
+#artistProfilePreview_postID_03::before {
+content: '';
+z-index: -1;
+position: absolute;
+top: 50%;
+left: 50%;
+width: 1em;
+height: 1em;
+border-radius: 50%;
+background-color: #67BEF4;
+transform-origin: center;
+transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+transition: transform 0.45s ease-in-out;
+}
+
+#artistProfilePreview_postID_03:active {
+cursor: pointer;
+color: white;
+}
+
+#artistProfilePreview_postID_03:active::before {
+transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+#artistProfilePreview_postID_03 {
+position: relative;
+font-size: inherit;
+font-family: inherit;
+cursor: pointer;
+
+}
+
+#artistProfilePreview_postID_03::after {
+content: '';
+z-index: -1;
+background-color: hsla(0, 0%, 100%, 0.534);
+position: absolute;
+top: -50%;
+bottom: -50%;
+width: 1.25em;
+transform: translate3d(-600%, 0, 0) rotate(35deg);
+}
+#artistProfilePreview_postID_03:hover{
+  overflow: hidden;
+}
+#artistProfilePreview_postID_03:hover::after {
+transition: transform 0.45s ease-in-out;
+transform: translate3d(800%, 0, 0) rotate(35deg);
+}
+@media screen and (max-width: 1080px) {
+#artistProfilePreview_postID_03, #onlineStatus, #offlineStatus, #inactiveStatus{
+  border-radius: 50%;
+}
+}
+
+#featuredPostsPreview_postID_03{
+z-index: 2;
+padding: 1%;
+max-width: 600px;
+height: auto;
+max-height: 1920px;
+position: relative;
+background-color: white;
+left: 235px;
+bottom: 50px;
+border-radius: 0px 5px 5px 5px;
+display: none;
+-webkit-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-moz-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-ms-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+-o-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+}
+#featuredPostsPreview_postID_03{
+visibility: hidden;
+opacity: 0;
+position: absolute; top: -9999px; left: -9999px;
+display: block;
+}
+
+.postSampleExample{
+  display:none;
+  width:100%;
+}
