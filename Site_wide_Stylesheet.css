@@ -1093,4 +1093,39 @@ html, body{
   }
 }
 /*end of code ADAPTED from https://cssfx.dev/ */
-
+.warning{
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .warning{
+    display: block;
+    width: 100%;
+  }
+  .warning img{
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    display: block;
+  }
+  .warning p{
+    text-align: center;
+    font-family: museo-sans-rounded;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 2%;
+  }
+  .warning p em{
+    text-align: center;
+    font-family: museo-sans-rounded;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .warning button{
+    margin: 5% 30%;
+    background-color: #A08ABF;
+    color: white;
+  }
+  header, .main_header, .tab_menu, .finances_header, .post_space {
+    display: none;
+  }
+}
