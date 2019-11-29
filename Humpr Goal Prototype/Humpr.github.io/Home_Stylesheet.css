@@ -1,0 +1,441 @@
+#home_button{
+    color: black;
+}
+
+#reHump button{
+  background-size: 80%;
+  height: 40px;
+}
+#reHump{
+  background-size: 100%;
+  height: 40px;
+}
+#save_to_button{
+  height: 40px;
+}
+#save_to_button button{
+    height: 40px;
+}
+.followedArtists{
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    padding: 1%;
+    border: #dedede dashed 1px;
+    background-color: #fafafabd;
+    margin-top: 6%;
+}
+.followedArtistsTitle{
+    font-family: hwt-artz;
+    font-size: 1.3rem;
+    text-align: center;
+    align-self: center;
+    margin: 1%;
+}
+#artistProfilePreview{
+    z-index: 3;
+    display: flex;
+    height: 5%;
+    max-height: 52px; 
+    width: auto;
+    min-height: 50px;
+    margin: 6% 3%;
+    background-color: whitesmoke;
+    border-radius: 20px 5px 5px 20px;
+}
+.artistInfo{
+    display: block;
+}
+.artistUsername{
+  font-family: museo-sans-rounded;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: left;
+  margin: 2%;
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+.userName{
+    margin: 1%;
+    text-align: left;
+    width: 40%;
+}
+
+/*start of code ADAPTED from https://cssfx.dev/ */
+.userName {
+    position: relative;
+    z-index: 1;
+  }
+.userName::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -0.25em;
+    right: -0.25em;
+    background-color: #67BEF4;
+    border-radius: 5px;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .userName:hover::before {
+    transform: scaleX(1);
+    transform-origin: center left;
+  }
+  .userName:hover{
+      color: white;
+  }
+/*end of code ADAPTED from https://cssfx.dev/ */
+
+.artistSpecialty{
+    margin: 1%;
+    text-align: center;
+    font-style: italic;
+    width: 560%;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+/*start of code ADAPTED from https://cssfx.dev/ */
+.artistSpecialty {
+    position: relative;
+  }
+  
+  .artistSpecialty::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    background-color: #A08ABF;
+    transform-origin: center;
+    transform: translate(-50%, 0) scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .artistSpecialty:hover::before {
+    transform: translate(-50%, 0) scaleX(.5);
+    opacity: 1;
+  }
+/*end of code ADAPTED from https://cssfx.dev/ */
+
+
+
+#onlineStatus{
+    background-image: url("https://picsum.photos/50.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #6EF093;
+    border-right: 4px double #6EF093;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px 5px 20px 20px;
+}
+#offlineStatus{
+  background-image: url("https://picsum.photos/50.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #E66A6A;
+  border-right: 4px double #E66A6A;
+  height: 50px;
+  width: 50px;
+  border-radius: 20px 5px 20px 20px;
+}
+#inactiveStatus{
+  background-image: url("https://picsum.photos/50.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #FCE285;
+  border-right: 4px double #FCE285;
+  height: 50px;
+  width: 50px;
+  border-radius: 20px 5px 20px 20px;
+}
+.userTopTags{
+    height: 50%;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 1%;
+    font-family: museo-sans-rounded;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+
+#artistProfilePreview:hover{
+   transform: scale(1.1,1.1);
+   -webkit-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+   -moz-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+   -ms-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+   -o-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+   box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+}
+
+/*start of code ADAPTED from https://cssfx.dev/ */
+#artistProfilePreview {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+  }
+  
+  #artistProfilePreview::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #A08ABF;
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+  }
+  
+  #artistProfilePreview:active {
+    cursor: pointer;
+    color: white;
+  }
+  
+  #artistProfilePreview:active::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+  }
+/*end of code ADAPTED from https://cssfx.dev/ */
+
+
+
+/*start of code ADAPTED from https://cssfx.dev/ */
+  #artistProfilePreview {
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    cursor: pointer;
+    
+  }
+  
+  #artistProfilePreview::after {
+    content: '';
+    z-index: -1;
+    background-color: hsla(0, 0%, 100%, 0.534);
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    width: 1.25em;
+    transform: translate3d(-600%, 0, 0) rotate(35deg);
+  }
+  #artistProfilePreview:hover{
+      overflow: hidden;
+  }
+  #artistProfilePreview:hover::after {
+    transition: transform 0.45s ease-in-out;
+    transform: translate3d(800%, 0, 0) rotate(35deg);
+  }
+  /*end of code ADAPTED from https://cssfx.dev/ */
+
+
+
+.columnfollowedArtists {
+    flex: 20%;
+    height: 100%;
+
+  }
+  @media screen and (max-width: 1350px) {
+    .post_space{ /*space where posts are allowed to appear*/
+      width: 100%;
+      justify-content: center;
+    }
+    .generalContainer{
+      flex-wrap: wrap;
+    }
+    .row {
+      min-width: 80%;
+      padding-top: -10%; 
+      margin: 0 auto;
+    }
+    .column{
+      margin: 0 auto;
+    }
+    .rowfollowedArtists{
+      min-width: 100%;
+      display: inline-flex;
+      justify-content: center;
+    }
+    .followedArtists{
+      position: static;
+      box-sizing: border-box;
+      top: 0px;
+      display: inline-flex;
+      max-height: 300px;
+      width: 100%;
+      border: #dedede dashed 1px;
+      overflow: auto;
+      justify-content: space-around;
+      align-content: center;
+  }
+  .artistProfilePreviewContainer{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    overflow: auto;
+  }
+  .profile_picture{
+    min-width: 50px;
+  }
+  
+  }
+  @media screen and (max-width: 1080px) {
+    .artistInfo{
+      display: none;
+    }
+    #artistProfilePreview, #onlineStatus, #offlineStatus, #inactiveStatus{
+      border-radius: 50%;
+    }
+    .artistProfilePreviewContainer{
+      display: inline-flex;
+      justify-content: space-around;
+      align-content: center;
+  }
+    .storiesContainer{
+      position: relative;
+      top: 30px;
+  }
+}
+
+  .generalContainer{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+.rowfollowedArtists {
+    display: block;
+    width: 18%;
+    height: 100%;
+    margin-right: 0px; 
+    padding: 1%
+  }
+.post_space{ /*space where posts are allowed to appear*/
+  width: 82%;
+}
+
+.row {
+  width: 31.333333%;
+  display: flex;
+  justify-content: space-around;
+  margin: 1%;
+}
+
+.column {
+  width: 100%;
+  flex: 31.3333%;
+}
+.reactMenu{
+  position: relative;
+  left: 80px;
+}
+
+.storiesContainer{
+  margin: 1%;
+  max-height: 100px;
+  border: #dedede 1px dashed;
+  display: inline-flex;
+  box-sizing: border-box;
+  width: 98%;
+}
+.storiesTitle{
+  font-family: hwt-artz;
+  font-size: 1.3rem;
+  margin: 1%;
+}
+.storiesTitle{
+  margin-right: 5%; 
+}
+.addStory{
+  background-color: whitesmoke;
+  background-image: url("https://image.flaticon.com/icons/svg/1237/1237946.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  background-size: 50%;
+  border-radius: 50%;
+  margin-right: 1%;
+}
+.storyBorder{
+  	margin: 0 auto;
+  	
+  	width: 60px;
+  	height: 60px;
+    z-index: 0;
+  	-webkit-border-radius: 220px;
+  	-moz-border-radius: 220px;
+    border-radius: 50%;
+  	-webkit-animation:turning_cw 5s infinite;
+  	-moz-animation:turning_cw 5s infinite;
+  	animation:turning_cw 5s infinite;
+    }
+    @-webkit-keyframes turning_cw {
+      0%{
+        -webkit-transform: rotate(0deg); }
+      100%{
+        -webkit-transform: rotate(360deg); }
+    }
+    .storyCircle{ 
+    margin: 0 auto;
+    z-index: 1;  
+    position: relative;
+    bottom: 55px;
+	  background-image: url("https://picsum.photos/100/50.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    }
+   .mainStoryContainer {
+      width: 62px;
+      height: 62px;
+      margin: 0px 1%;
+    }
+
+    .unseen{
+      opacity: 1;
+      border: 1px dashed #ECEBFA;
+      background: -webkit-linear-gradient(top, #A08ABF 1%, #67BEF4 100%);
+  	  background: -moz-linear-gradient(top, #A08ABF 1%, #67BEF4 100%);
+    	background: linear-gradient(to bottom, #A08ABF 1%, #67BEF4 100%);
+    }
+    .seen{
+      opacity: .3;
+      border: 1px solid #ECEBFA;
+      background: -webkit-linear-gradient(top, #dedede 1%, #dedede 100%);
+  	  background: -moz-linear-gradient(top, #dedede 1%, #dedede 100%);
+    	background: linear-gradient(to bottom, #dedede 1%, #dedede 100%);
+    }
+
+    .mainStoryContainer:hover, .addStory:hover{
+      border-radius: 50%;
+      transform: scale(1.1,1.1);
+   -webkit-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+   -moz-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+   -ms-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+   -o-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+   box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+    }

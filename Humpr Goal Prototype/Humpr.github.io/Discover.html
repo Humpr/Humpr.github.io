@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Humpr Discover</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+        <!--linked stylesheets include a reset sheet, a custom fonts sheet, a site-wide sheet and a page-specific sheet.-->
+        <link rel="stylesheet" href="./Discover_Stylesheet.css">
+        <link rel="stylesheet" href="./Site_wide_Stylesheet.css">
+        <link rel="stylesheet" href="./reset_stylesheet.css">
+        <link rel="stylesheet" href="./postExamples_stylesheet.css">
+        <!--metadata-->
+        <meta charset="UTF-8">
+        <meta name="description" content="Humpr is the good social media. We allow NSFW creations, fascilitate our users' privacy, and allow you to make a secure living. Find your next favorite artist on Humpr.">
+        <meta name="keywords" content="gallery, new artists, innovation, humps, machine learning, art, discover, Humpr, social network, social media, good, secure, private, new, art, artist, donate, trending, visual, multimedia, learn, educational, blog, vlog, music, drawing, painting, video, audiovisual, content, creator, facebook, alternative, twitter, tumblr, hentai, pornhub, google">
+        <meta name="author" content="Fred">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--All visual JavaScript scripts should go below here-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script>
+        /*Script for quick-purchase credits button movement*/
+        $(document).ready(function(){
+            $("#purchase_credits").click(function(){
+                $("#credit_price").slideToggle("slow");
+            });
+        });
+        /*Script for post order button movement*/
+        $(document).ready(function(){
+            $("#post_order_button").click(function(){
+                $("#order_options").slideToggle("slow");
+            });
+        });
+
+        /*Original post reaction menu script*/
+        $(document).ready(function(){
+            $("#highest_reaction").click(function(){
+                $("#reactMenuContainer").slideToggle("fast");
+            });
+        });
+        $(document).ready(function(){
+            $("#flag").click(function(){
+                $("#flagMenu").slideToggle("fast");
+            });
+        });
+        $(document).ready(function(){
+            $("#verify").click(function(){
+                $("#verifyMenu").slideToggle("fast");
+            });
+        });
+        $(document).ready(function(){
+            $("#emote").click(function(){
+                $("#emoteMenu").slideToggle("fast");
+            });
+        });
+        
+        $(document).ready(function(){
+            $("#artistProfilePreview").hover(function(){
+                $("#featuredPostsPreview").slideToggle("slow");
+            });
+        });
+        </script>      
+
+        <script src=".\postExamples_Scripts.js"></script>
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    </head>
+    <body>
+        <header>
+            <div class="main_header">
+                <div id="logo"><h1><a href="https://www.humpr.net/" style="color: white; text-decoration: none;">HUMPR</a></h1></div>
+                <div class="spacer"></div>
+                <div class="search">
+                <img src="https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png" alt="looking glass" class="search_glass">
+                <div class="searchLine">
+                <input type="text" placeholder="Search Tags" class="search_bar">
+                <span class="searchBottom"></span>
+                <span class="searchRight"></span>
+                <span class="searchTop"></span>
+                <span class="searchLeft"></span>
+                </div>
+            </div>
+                <div class="switch_container">
+                    <div><h2>SFW</h2></div>
+                    <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                    </label>
+                    <div><h2>NSFW</h2></div>
+                </div>
+                <div class="spacer"></div>
+                <div class="main_buttons">
+                    <button id="sign_up" class="button">Sign Up</button>                    <div>
+                    <button id="sign_in" class="button">Sign In</button>
+                </div>
+
+            </div>
+        </header>
+        <div class="tab_menu">
+            <button class="menu_button" id="home_button"><a target="_self" href="./Home.html">Home</a></button> <!--Must make link real when available-->
+            <button class="menu_button" id="discover_button"><h1>Discover</h1></button>
+            <button class="menu_button" id="trending_button"><a target="_self" href="./Trending.html">Trending</a></button> <!--Must make link real when available-->
+        </div>
+        <div class="finances_header">              
+            <div class="xp_container">
+                <div class="xp_text"><h1>XP:</h1></div>
+                <div class="xp_line"></div>
+                <div class="xp_number"><h1>999,999,999xp</h1></div>
+                <div class="level_number"><h1>Rank: 1</h1></div>
+            </div>
+            <div class="treasure_chest">
+                <img class="chest_image" src="https://img.icons8.com/color/48/000000/treasure-chest.png">
+                <div class="credit_amount"><img src="https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5d22b7e022cc8f1db4274cb2/6c3e54bc06bf3b1cb2a47934a2126f54/coin.png"><h1>999</h1></div>
+                <button id="purchase_credits"> <img src="https://img.icons8.com/bubbles/50/000000/plus.png"> </button>
+                
+                <div id="credit_price">
+                    <div class="mover">
+                        <div class="token_pop_title"><h1>Support your favorite artists!</h1></div>
+                        <div class="amount_tokens"><img src="https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5d22b7e022cc8f1db4274cb2/6c3e54bc06bf3b1cb2a47934a2126f54/coin.png"><input type="number" class="token_amount" placeholder="enter amount"></div>
+                        <div class="token_pop_amount"><h1>Amount in dollars: $4.99</h1></div>
+                        <div class="buy_buttons_pop">
+                            <button class="buy_tokens"><h1>Buy Humpr Credits</h1></button>
+                            <button class="view_combos"><h1>View credit bundles</h1></button>
+                        </div>
+                    </div>
+                </div>
+                    
+                    
+            </div>
+                <div class="general_post_order">
+                    <div class="post_order"><button id="post_order_button"><h1>Sort by New</h1><img id="post_order_arrow" src="https://maxcdn.icons8.com/Share/icon/win8/Arrows/expand_arrow1600.png"></button></div>
+                    <div id="order_options"><button><h1>Views</h1></button><button><h1>Popularity</h1></button><button><h1>Alphabetical</h1></button></div>
+                </div>
+            </div>
+        </div>
+        <!--end of headers, start of posts-->
+        <div class="generalContainer">
+        <div class="rowDiscoverArtists"> <!--Post organizers-->
+                <div class="columnDiscoverArtists">
+                    
+                    <div class="discoverArtists">
+                        <h1 class="discoverArtistsTitle">Artists you might like</h1>
+                        <div class="artistProfilePreviewContainer">
+                        <div id="artistProfilePreview">
+                                <div class="profile_picture" id="onlineStatus"></div>
+                                <div class="artistInfo">
+                                    <div class="artistUsername"><h1 class="userName">Norom</h1> <h1 class="artistSpecialty">Makes Music</h1></div>
+                                    <div class="userTopTags"><h2>#Lorem #ipsum #dolor</h2></div>
+                                </div>
+                        </div>
+                        <div id="featuredPostsPreview">
+                                <div class="featuredPostsGallery">
+                                        <h2 class="previewTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                                        <img class="postSample" src="https://picsum.photos/420/650.jpg">
+                                        <img class="postSample" src="https://picsum.photos/1080/720.jpg">
+                                        <img class="postSample" src="https://picsum.photos/420.jpg">
+                                        <img class="postSample" src="https://picsum.photos/640.jpg">
+                                        <script>
+                                                /*Script for sample galleries, adapted from https://www.w3schools.com/*/
+                                                var myIndex = 0;
+                                                carousel();
+                                                
+                                                function carousel() {
+                                                  var i;
+                                                  var x = document.getElementsByClassName("postSample");
+                                                  for (i = 0; i < x.length; i++) {
+                                                    x[i].style.display = "none";  
+                                                  }
+                                                  myIndex++;
+                                                  if (myIndex > x.length) {myIndex = 1}    
+                                                  x[myIndex-1].style.display = "block";  
+                                                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                                                }
+                                        </script>
+                                        <h2 class="userTopTags">#Lorem #ipsum #dolor</h2>
+                                </div>
+                        </div>
+
+                        <!--example artists-->
+                        <div id="artistProfilePreview_postID_01">
+                            <div class="profile_picture" id="onlineStatus"></div>
+                            <div class="artistInfo">
+                                <div class="artistUsername"><h1 class="userName">Norom</h1> <h1 class="artistSpecialty">Makes Music</h1></div>
+                                <div class="userTopTags"><h2>#Lorem #ipsum #dolor</h2></div>
+                            </div>
+                    </div>
+                    <div id="featuredPostsPreview_postID_01">
+                            <div class="featuredPostsGallery">
+                                    <h2 class="previewTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                                    <img class="postSampleExample" src="https://picsum.photos/420/650.jpg">
+                                    <img class="postSampleExample" src="https://picsum.photos/1080/720.jpg">
+                                    <img class="postSampleExample" src="https://picsum.photos/420.jpg">
+                                    <img class="postSampleExample" src="https://picsum.photos/640.jpg">
+                                    
+                                    <h2 class="userTopTags">#Lorem #ipsum #dolor</h2>
+                            </div>
+                    </div>
+                        <div id="artistProfilePreview_postID_02">
+                            <div class="profile_picture" id="inactiveStatus"></div>
+                            <div class="artistInfo">
+                                <div class="artistUsername"><h1 class="userName">Norom</h1> <h1 class="artistSpecialty">Makes Music</h1></div>
+                                <div class="userTopTags"><h2>#Lorem #ipsum #dolor</h2></div>
+                            </div>
+                    </div>
+                    <div id="featuredPostsPreview_postID_02">
+                            <div class="featuredPostsGallery">
+                                    <h2 class="previewTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                                    <img class="postSampleExample" src="https://picsum.photos/420/650.jpg">
+                                    <img class="postSampleExample" src="https://picsum.photos/1080/720.jpg">
+                                    <img class="postSampleExample" src="https://picsum.photos/420.jpg">
+                                    <img class="postSampleExample" src="https://picsum.photos/640.jpg">
+                                    
+                                    <h2 class="userTopTags">#Lorem #ipsum #dolor</h2>
+                            </div>
+                    </div>
+                    <div id="artistProfilePreview_postID_03">
+                        <div class="profile_picture" id="offlineStatus"></div>
+                        <div class="artistInfo">
+                            <div class="artistUsername"><h1 class="userName">Norom</h1> <h1 class="artistSpecialty">Makes Music</h1></div>
+                            <div class="userTopTags"><h2>#Lorem #ipsum #dolor</h2></div>
+                        </div>
+                </div>
+                <div id="featuredPostsPreview_postID_03">
+                        <div class="featuredPostsGallery">
+                                <h2 class="previewTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                                <img class="postSampleExample" src="https://picsum.photos/420/650.jpg">
+                                <img class="postSampleExample" src="https://picsum.photos/1080/720.jpg">
+                                <img class="postSampleExample" src="https://picsum.photos/420.jpg">
+                                <img class="postSampleExample" src="https://picsum.photos/640.jpg">
+                                
+                                <h2 class="userTopTags">#Lorem #ipsum #dolor</h2>
+                        </div>
+                </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>        
+        </div>
+        
+
+        <div class="post_space">
+            <div class="row">
+                    <div class="column">
+    
+                            <div class="post"> <!--Exemplar post, universal format-->
+                                <div class="post_header">
+                                    <div class="profile_picture"></div>
+                                    <div class="post_title"><h2>A Darling In The Franxx Tribute [free download & read description!]</h2></div>
+                                    <div class="reactionContainer"><button id="highest_reaction"><div class="crown"></div></button></div>
+                                </div>
+                                <div id="reactMenuContainer">
+                                <div class="reactMenu">
+                                        <div class="flagGeneral">
+                                            <button id="flag"></button>
+                                            <div id="flagMenu"><button><h1>• It's Spam</h1></button><button><h1>• It infringes user rights</h1></button><button><h1>• It's illegal</h1></button><button><h1>• It's propaganda</h1></button></div>
+                                        </div>
+                                        <div class="verifyGeneral">
+                                                <button id="verify"></button>
+                                                <div id="verifyMenu"><h1>Would you like us to review this post for verification?</h1><button><h1>I confirm this post is factual and educational.</h1></button></div>
+                                        </div>
+                                        <div class="emoteGeneral">
+                                                <button id="emote"></button>
+                                                <div id="emoteMenu"><button class="react Joy"></button><button class="react Love"></button><button class="react Sad"></button><button class="react Angry"></button><button class="react Thonk"></button><button class="react Shock"></button></div>
+                                        </div>                                
+                                </div>
+                                </div>
+                                <div class="post_content"></div>
+        
+                                <div class="post_footer">
+                                    <div class="top_hashtags"><h2>#fun #music #original #norom</h2></div>
+                                    <div class="postDiscoveryButtons">                                 <div class="likedButton"><button></button></div>                                 <div class="dislikedButton"><button></button></div>                             </div>
+                                </div>
+                            </div>
+        
+                            <div class="post"> <!--test post-->
+                                <div class="post_header">
+                                    <div class="profile_picture"><img src="https://picsum.photos/100/50.jpg"></div>
+                                    <div class="post_title"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2></div>
+                                    <div class="reactionContainer"><button id="highest_reaction_postID_01"><div class="crown"></div></button></div>
+                                </div>
+                                <div id="reactMenuContainer_postID_01">
+                                <div class="reactMenu">
+                                        <div class="flagGeneral">
+                                            <button id="flag_postID_01"></button>
+                                            <div id="flagMenu_postID_01"><button><h1>• It's Spam</h1></button><button><h1>• It infringes user rights</h1></button><button><h1>• It's illegal</h1></button><button><h1>• It's propaganda</h1></button></div>
+                                        </div>
+                                        <div class="verifyGeneral">
+                                                <button id="verify_postID_01"></button>
+                                                <div id="verifyMenu_postID_01"><h1>Would you like us to review this post for verification?</h1><button><h1>I confirm this post is factual and educational.</h1></button></div>
+                                        </div>
+                                        <div class="emoteGeneral">
+                                                <button id="emote_postID_01"></button>
+                                                <div id="emoteMenu_postID_01"><button class="react Joy"></button><button class="react Love"></button><button class="react Sad"></button><button class="react Angry"></button><button class="react Thonk"></button><button class="react Shock"></button></div>
+                                        </div>
+                                </div>
+                                </div>
+                                <div class="post_content"><img src="https://picsum.photos/512.jpg"></div>
+        
+                                <div class="post_footer">
+                                    <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
+                                    <div class="postDiscoveryButtons">
+                                        <div class="likedButton"><button></button></div>
+                                        <div class="dislikedButton"><button></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="post"> <!--test post-->
+                                <div class="post_header">
+                                    <div class="profile_picture"><img src="https://picsum.photos/100/50.jpg"></div>
+                                    <div class="post_title"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2></div>
+                                    <div class="reactionContainer"><button id="highest_reaction_postID_02"><div class="crown"></div></button></div>
+                                </div>
+                                <div id="reactMenuContainer_postID_02">
+                                <div class="reactMenu">
+                                        <div class="flagGeneral">
+                                            <button id="flag_postID_02"></button>
+                                            <div id="flagMenu_postID_02"><button><h1>• It's Spam</h1></button><button><h1>• It infringes user rights</h1></button><button><h1>• It's illegal</h1></button><button><h1>• It's propaganda</h1></button></div>
+                                        </div>
+                                        <div class="verifyGeneral">
+                                                <button id="verify_postID_02"></button>
+                                                <div id="verifyMenu_postID_02"><h1>Would you like us to review this post for verification?</h1><button><h1>I confirm this post is factual and educational.</h1></button></div>
+                                        </div>
+                                        <div class="emoteGeneral">
+                                                <button id="emote_postID_02"></button>
+                                                <div id="emoteMenu_postID_02"><button class="react Joy"></button><button class="react Love"></button><button class="react Sad"></button><button class="react Angry"></button><button class="react Thonk"></button><button class="react Shock"></button></div>
+                                        </div>
+                                </div>
+                                </div>
+                                <div class="post_content"><img src="https://picsum.photos/512.jpg"></div>
+        
+                                <div class="post_footer">
+                                    <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
+                                    <div class="postDiscoveryButtons">                                 <div class="likedButton"><button></button></div>                                 <div class="dislikedButton"><button></button></div>                             </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+    
+                        <div class="post"> <!--test post-->
+                            <div class="post_header">
+                                <div class="profile_picture"><img src="https://picsum.photos/100/50.jpg"></div>
+                                <div class="post_title"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2></div>
+                                <div class="reactionContainer"><button id="highest_reaction_postID_03"><div class="crown"></div></button></div>
+                            </div>
+                            <div id="reactMenuContainer_postID_03">
+                            <div class="reactMenu">
+                                    <div class="flagGeneral">
+                                        <button id="flag_postID_03"></button>
+                                        <div id="flagMenu_postID_03"><button><h1>• It's Spam</h1></button><button><h1>• It infringes user rights</h1></button><button><h1>• It's illegal</h1></button><button><h1>• It's propaganda</h1></button></div>
+                                    </div>
+                                    <div class="verifyGeneral">
+                                            <button id="verify_postID_03"></button>
+                                            <div id="verifyMenu_postID_03"><h1>Would you like us to review this post for verification?</h1><button><h1>I confirm this post is factual and educational.</h1></button></div>
+                                    </div>
+                                    <div class="emoteGeneral">
+                                            <button id="emote_postID_03"></button>
+                                            <div id="emoteMenu_postID_03"><button class="react Joy"></button><button class="react Love"></button><button class="react Sad"></button><button class="react Angry"></button><button class="react Thonk"></button><button class="react Shock"></button></div>
+                                    </div>
+                            </div>
+                            </div>
+                            <div class="post_content"><img src="https://picsum.photos/512.jpg"></div>
+    
+                            <div class="post_footer">
+                                <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
+                                <div class="postDiscoveryButtons">                                         <div class="likedButton"><button></button></div>                                         <div class="dislikedButton"><button></button></div>                                     </div>
+                            </div>
+                        </div>
+
+                        <div class="post"> <!--test post-->
+                            <div class="post_header">
+                                <div class="profile_picture"><img src="https://picsum.photos/100/50.jpg"></div>
+                                <div class="post_title"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2></div>
+                                <div class="reactionContainer"><button id="highest_reaction_postID_04"><div class="crown"></div></button></div>
+                            </div>
+                            <div id="reactMenuContainer_postID_04">
+                            <div class="reactMenu">
+                                    <div class="flagGeneral">
+                                        <button id="flag_postID_04"></button>
+                                        <div id="flagMenu_postID_04"><button><h1>• It's Spam</h1></button><button><h1>• It infringes user rights</h1></button><button><h1>• It's illegal</h1></button><button><h1>• It's propaganda</h1></button></div>
+                                    </div>
+                                    <div class="verifyGeneral">
+                                            <button id="verify_postID_04"></button>
+                                            <div id="verifyMenu_postID_04"><h1>Would you like us to review this post for verification?</h1><button><h1>I confirm this post is factual and educational.</h1></button></div>
+                                    </div>
+                                    <div class="emoteGeneral">
+                                            <button id="emote_postID_04"></button>
+                                            <div id="emoteMenu_postID_04"><button class="react Joy"></button><button class="react Love"></button><button class="react Sad"></button><button class="react Angry"></button><button class="react Thonk"></button><button class="react Shock"></button></div>
+                                    </div>
+                            </div>
+                            </div>
+                            <div class="post_content"><img src="https://picsum.photos/512.jpg"></div>
+    
+                            <div class="post_footer">
+                                <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
+                                <div class="postDiscoveryButtons">                                         <div class="likedButton"><button></button></div>                                         <div class="dislikedButton"><button></button></div>                                     </div>
+                            </div>
+                        </div>
+
+                        <div class="post"> <!--test post-->
+                            <div class="post_header">
+                                <div class="profile_picture"><img src="https://picsum.photos/100/50.jpg"></div>
+                                <div class="post_title"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2></div>
+                                <div class="reactionContainer"><button id="highest_reaction_postID_05"><div class="crown"></div></button></div>
+                            </div>
+                            <div id="reactMenuContainer_postID_05">
+                            <div class="reactMenu">
+                                    <div class="flagGeneral">
+                                        <button id="flag_postID_05"></button>
+                                        <div id="flagMenu_postID_05"><button><h1>• It's Spam</h1></button><button><h1>• It infringes user rights</h1></button><button><h1>• It's illegal</h1></button><button><h1>• It's propaganda</h1></button></div>
+                                    </div>
+                                    <div class="verifyGeneral">
+                                            <button id="verify_postID_05"></button>
+                                            <div id="verifyMenu_postID_05"><h1>Would you like us to review this post for verification?</h1><button><h1>I confirm this post is factual and educational.</h1></button></div>
+                                    </div>
+                                    <div class="emoteGeneral">
+                                            <button id="emote_postID_05"></button>
+                                            <div id="emoteMenu_postID_05"><button class="react Joy"></button><button class="react Love"></button><button class="react Sad"></button><button class="react Angry"></button><button class="react Thonk"></button><button class="react Shock"></button></div>
+                                    </div>
+                            </div>
+                            </div>
+                            <div class="post_content"><img src="https://picsum.photos/512.jpg"></div>
+    
+                            <div class="post_footer">
+                                <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
+                                <div class="postDiscoveryButtons">                                         <div class="likedButton"><button></button></div>                                         <div class="dislikedButton"><button></button></div>                                     </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                        <div class="column">
+        
+                            <div class="post"> <!--test post-->
+                                <div class="post_header">
+                                    <div class="profile_picture"><img src="https://picsum.photos/100/50.jpg"></div>
+                                    <div class="post_title"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2></div>
+                                    <div class="reactionContainer"><button id="highest_reaction_postID_06"><div class="crown"></div></button></div>
+                                </div>
+                                <div id="reactMenuContainer_postID_06">
+                                <div class="reactMenu">
+                                        <div class="flagGeneral">
+                                            <button id="flag_postID_06"></button>
+                                            <div id="flagMenu_postID_06"><button><h1>• It's Spam</h1></button><button><h1>• It infringes user rights</h1></button><button><h1>• It's illegal</h1></button><button><h1>• It's propaganda</h1></button></div>
+                                        </div>
+                                        <div class="verifyGeneral">
+                                                <button id="verify_postID_06"></button>
+                                                <div id="verifyMenu_postID_06"><h1>Would you like us to review this post for verification?</h1><button><h1>I confirm this post is factual and educational.</h1></button></div>
+                                        </div>
+                                        <div class="emoteGeneral">
+                                                <button id="emote_postID_06"></button>
+                                                <div id="emoteMenu_postID_06"><button class="react Joy"></button><button class="react Love"></button><button class="react Sad"></button><button class="react Angry"></button><button class="react Thonk"></button><button class="react Shock"></button></div>
+                                        </div>
+                                </div>
+                                </div>
+                                <div class="post_content"><img src="https://picsum.photos/512.jpg"></div>
+        
+                                <div class="post_footer">
+                                    <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
+                                    <div class="postDiscoveryButtons">                                         <div class="likedButton"><button></button></div>                                         <div class="dislikedButton"><button></button></div>                                     </div>
+                                </div>
+                            </div>
+
+                            <div class="post"> <!--test post-->
+                                <div class="post_header">
+                                    <div class="profile_picture"><img src="https://picsum.photos/100/50.jpg"></div>
+                                    <div class="post_title"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2></div>
+                                    <div class="reactionContainer"><button id="highest_reaction_postID_07"><div class="crown"></div></button></div>
+                                </div>
+                                <div id="reactMenuContainer_postID_07">
+                                <div class="reactMenu">
+                                        <div class="flagGeneral">
+                                            <button id="flag_postID_07"></button>
+                                            <div id="flagMenu_postID_07"><button><h1>• It's Spam</h1></button><button><h1>• It infringes user rights</h1></button><button><h1>• It's illegal</h1></button><button><h1>• It's propaganda</h1></button></div>
+                                        </div>
+                                        <div class="verifyGeneral">
+                                                <button id="verify_postID_07"></button>
+                                                <div id="verifyMenu_postID_07"><h1>Would you like us to review this post for verification?</h1><button><h1>I confirm this post is factual and educational.</h1></button></div>
+                                        </div>
+                                        <div class="emoteGeneral">
+                                                <button id="emote_postID_07"></button>
+                                                <div id="emoteMenu_postID_07"><button class="react Joy"></button><button class="react Love"></button><button class="react Sad"></button><button class="react Angry"></button><button class="react Thonk"></button><button class="react Shock"></button></div>
+                                        </div>
+                                </div>
+                                </div>
+                                <div class="post_content"><img src="https://picsum.photos/512.jpg"></div>
+        
+                                <div class="post_footer">
+                                    <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
+                                    <div class="postDiscoveryButtons">                                         <div class="likedButton"><button></button></div>                                         <div class="dislikedButton"><button></button></div>                                     </div>
+                                </div>
+                            </div>
+
+                            <div class="post"> <!--test post-->
+                                <div class="post_header">
+                                    <div class="profile_picture"><img src="https://picsum.photos/100/50.jpg"></div>
+                                    <div class="post_title"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2></div>
+                                    <div class="reactionContainer"><button id="highest_reaction_postID_08"><div class="crown"></div></button></div>
+                                </div>
+                                <div id="reactMenuContainer_postID_08">
+                                <div class="reactMenu">
+                                        <div class="flagGeneral">
+                                            <button id="flag_postID_08"></button>
+                                            <div id="flagMenu_postID_08"><button><h1>• It's Spam</h1></button><button><h1>• It infringes user rights</h1></button><button><h1>• It's illegal</h1></button><button><h1>• It's propaganda</h1></button></div>
+                                        </div>
+                                        <div class="verifyGeneral">
+                                                <button id="verify_postID_08"></button>
+                                                <div id="verifyMenu_postID_08"><h1>Would you like us to review this post for verification?</h1><button><h1>I confirm this post is factual and educational.</h1></button></div>
+                                        </div>
+                                        <div class="emoteGeneral">
+                                                <button id="emote_postID_08"></button>
+                                                <div id="emoteMenu_postID_08"><button class="react Joy"></button><button class="react Love"></button><button class="react Sad"></button><button class="react Angry"></button><button class="react Thonk"></button><button class="react Shock"></button></div>
+                                        </div>
+                                </div>
+                                </div>
+                                <div class="post_content"><img src="https://picsum.photos/512.jpg"></div>
+        
+                                <div class="post_footer">
+                                    <div class="top_hashtags"><h2>#Lorem #ipsum #dolor #amet </h2></div>
+                                    <div class="postDiscoveryButtons">                                         <div class="likedButton"><button></button></div>                                         <div class="dislikedButton"><button></button></div>                                     </div>
+                                </div>
+                            </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            
+
+
+        </div>
+        
+    </div>
+    </body>
+</html>
