@@ -1,0 +1,1131 @@
+@font-face {
+  font-family:"hwt-artz";
+  src:url("https://use.typekit.net/af/833344/000000000000000000015260/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/833344/000000000000000000015260/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/833344/000000000000000000015260/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-style:normal;font-weight:700;
+  }
+@font-face {
+  font-family:"museo-sans-rounded";
+  src:url("https://use.typekit.net/af/491586/00000000000000003b9b1e2d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/491586/00000000000000003b9b1e2d/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/491586/00000000000000003b9b1e2d/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+  font-style:normal;font-weight:300;
+  }
+      
+@font-face {
+  font-family:"museo-sans-rounded";
+  src:url("https://use.typekit.net/af/9baf4a/00000000000000003b9b1e2f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/9baf4a/00000000000000003b9b1e2f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/9baf4a/00000000000000003b9b1e2f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-style:normal;font-weight:700;
+  }
+      
+@font-face {
+  font-family:"museo-sans-rounded";
+  src:url("https://use.typekit.net/af/da3604/00000000000000003b9b1e2c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff2"),url("https://use.typekit.net/af/da3604/00000000000000003b9b1e2c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff"),url("https://use.typekit.net/af/da3604/00000000000000003b9b1e2c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("opentype");
+  font-style:normal;font-weight:100;
+  }
+@font-face {
+  font-family:"proxima-nova";
+  src:url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-style:normal;font-weight:700;
+  }
+      
+@font-face {
+  font-family:"proxima-nova";
+  src:url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-style:normal;font-weight:400;
+  }
+/*all external fonts are placed above*/
+
+::-webkit-scrollbar{
+  background-color: none;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0f2727cb4ae824ded0371e/fe697bb0210049755319eba974248fef/Logo_final_HUMPR_final.png");
+  background-size: 10px;
+  max-width: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #dedede;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    content:url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0b10ec43c3d149acb9343e/c1c6ef06fcd5f423b0c5a9d223a29da7/Comp_1_(0000).png")
+  }
+  .slider::before {
+    content:url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0b10ec43c3d149acb9343e/e77a9c42e225e990ada3e9ee6f100d87/Comp_2_(0000).png")
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/*Above switch code was used from w3schools.com*/
+*{
+  box-sizing: border-box;
+  /*debug*/
+  
+}
+html, body{
+  font-size: 12px;
+  font-family: museo-sans-rounded;
+}
+.main_header, .tab_menu, .finaces_header, .treasure_chest{
+    display: flex;
+    /*justify-content: space-around;*/
+}
+.main_header{
+  background-color: #67BEF4;
+}
+.search{/*main search container. includes icon and search bar.*/
+  display: flex;
+  box-sizing: border-box;
+  height: 20%;
+  width: 50%;
+  align-content: center;
+  justify-content: space-around;
+  margin: 2% 1%;
+  max-height: 50px;
+  max-width: 650px;
+}
+.search_glass{/*icon next to search bar*/
+  max-width: 30px;
+  min-width: 20px;
+  max-height: 30px;
+  min-height: 20px;
+  align-self: auto;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: auto;
+  height: auto;
+  width: 20px;
+  margin:auto;
+}
+.search_bar{
+  min-width: 100px;
+  width: 99%;
+  height: 100%;
+  border: transparent;
+  border-radius: 4px;
+  justify-content: flex-end;
+  margin: .5%;
+  flex-grow: 2;
+  font-family: museo-sans-rounded, roboto, 'Courier New', Courier, monospace;
+}
+/*start of code ADAPTED from https://cssfx.dev/ */
+@media only screen and (max-width: 1300px){
+  .search{
+    margin-top: 3%;
+  }
+}
+.search_bar{
+  transition: background-color 0.3s ease-in-out;
+}
+.searchLine{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.search_bar:focus {
+  outline: none;
+}
+.search span{
+  position: absolute;
+  background-color: #A08ABF;
+  transition: transform 0.1s ease;
+}
+.searchBottom,
+.searchTop {
+  height: 3px;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+}
+
+.searchLeft,
+.searchRight {
+  width: 3px;
+  top: 0;
+  bottom: 0;
+  transform: scaleY(0);
+}
+
+.searchBottom {
+  bottom: 0;
+  transform-origin: bottom right;
+}
+.search_bar:focus ~ .searchBottom {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+.searchRight {
+  right: 0;
+  transform-origin: top right;
+  transition-delay: 0.05s;
+}
+.search_bar:focus ~ .searchRight {
+  transform-origin: bottom right;
+  transform: scaleY(1);
+}
+.searchTop {
+  top: 0;
+  transform-origin: top left;
+  transition-delay: 0.15s;
+}
+.search_bar:focus ~ .searchTop {
+  transform-origin: top right;
+  transform: scaleX(1);
+}
+.serchLeft {
+  left: 0;
+  transform-origin: bottom left;
+  transition-delay: 0.25s;
+}
+.search_bar:focus ~ .searchLeft {
+  transform-origin: top left;
+  transform: scaleY(1);
+}
+
+/*end of code ADAPTED from https://cssfx.dev/ */
+
+#logo{
+  font-family: hwt-artz;
+  font-size: 3rem;
+  display: flex;
+  box-sizing: border-box;
+  margin: 1%;
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: .5%;
+  color: white;
+
+}
+.switch_container{
+  font-family:"proxima-nova";
+  font-weight: 700;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: .5%;
+  justify-content: space-around;
+}
+
+.main_buttons{/*sign in and sign up*/
+  font-family:"proxima-nova";
+  font-weight: 700;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: 1%;
+  justify-content: space-around;
+  width: 20%;
+  min-width: 200px;
+  max-width: 260px;
+
+}
+.button{/*general button css*/
+  border: 2px solid whitesmoke;
+  background-color: white;
+  color: black;
+  padding: auto;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 3%;
+}
+/*css actions when clicking buttons:*/
+#sign_up{
+  height: 30%;
+  width: 60%;
+  min-width: 50px;
+  max-width: 100px;
+  min-height: 40px;
+  max-height: 60px;
+  font-size: 1em;
+  flex-wrap: wrap;
+  overflow: hidden; 
+  align-items: center;
+  justify-content: center;
+  justify-self: auto;
+  flex-basis: auto;
+  flex-grow: 2;
+  flex-shrink: .3;
+}
+#sign_up:hover {
+  background-color: #A08ABF;
+  border: 2px solid #A08ABF;
+  color: white;
+}
+#sign_up:active {
+  background-color: #A7DDF2;
+  border: 2px solid #A7DDF2;
+}
+#sign_in{
+  height: 30%;
+  width: 40%;
+  min-width: 80px;
+  max-width: 100px;
+  min-height: 40px;
+  max-height: 60px;
+  font-size: 1em;
+  flex-wrap: nowrap;
+  overflow: hidden; 
+  align-items: center;
+  justify-content: center;
+  justify-self: auto;
+  flex-basis: auto;
+  flex-grow: 1;
+}
+#sign_in:hover {
+  background-color: #A08ABF;
+  border: 2px solid #A08ABF;
+  color: white;
+}
+#sign_in:active {
+  background-color: #56D9DB;
+  border: 2px solid #56D9DB;
+}
+
+.spacer{/*general spacer css*/
+  width: 10%;
+  max-width: 100px;
+  min-width: 1px;
+}
+
+.tab_menu{/*container for the home, trending, and discover buttons*/
+  background-color: whitesmoke;
+  height: 5%;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+.menu_button{/*general name for the menu buttons*/
+  color: hsla(0, 0%, 10%, 0.4);
+  background-color: hsla(0, 0%, 0%, 0.0);
+  border: none;
+  font-family:"hwt-artz";
+  font-size: 1.3rem;
+  margin: 1% 3%;
+  position: relative;
+}
+.menu_button a{
+  text-decoration: none;
+  color: hsla(0, 0%, 10%, 0.4);
+}
+.menu_button:focus{
+  color: black;
+}
+
+#home_button, #trending_button, #discover_button{
+  position: relative;
+}
+
+.finances_header{ /*general container for the third header, which includes the Humpr credit system basic interaction controls*/
+  display: flex;
+  width: 100%;
+  height: 3%;
+  background-color: white;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.xp_container{/*general container for XP*/
+  width: 6%;
+  height: 50px;
+  min-width: 200px;
+  max-width: 700px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  border-radius: 2px 2px 15px 2px;
+  padding-left: .5%;
+}
+.xp_text{/*holds the text that says "XP*/
+  font-family: museo-sans-rounded;
+  font-weight: 700;
+  max-width: 25px;
+  margin: auto;
+  display: inline-flex;
+}
+.xp_line{/*The line that measures XP*/
+  border: #A08ABF solid 1px;
+  border-radius: 3px;
+  width: 80%;
+  flex-basis: 200px;
+  height: 20px;
+  margin: auto;
+  margin-bottom: -3px;
+  display: inline-flex;
+  background-image:url("https://static.vecteezy.com/system/resources/previews/000/189/884/large_2x/vector-colorful-geometric-lines-pattern-background.jpg")  ;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-position-x: -30px;
+  background-color: white;
+}
+.xp_number{/*number of XP*/
+  width: 10%;
+  min-width: 100px;
+  max-width: 150px;
+  font-family: museo-sans-rounded;
+  font-weight: 700;
+  font-size: .9rem;
+  display: inline-flex;
+  margin: 1% 1% 0px 15%;
+  flex-shrink: 2;
+  background-color: #e6e3e3;
+  border-radius: 3px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+.level_number{/*user ranking*/
+  width: 10%;
+  min-width: 50px;
+  max-width: 80px;
+  font-family: hwt-artz;
+  margin: 0 auto;
+  display: inline-flex;
+}
+.treasure_chest{/*general container for "at-a-glance* credits on the header*/
+  display: inline-flex;
+  font-family: hwt-artz;
+  font-size: 1.5rem;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 0px 0px 3px 3px;
+  z-index: 1;
+}
+.credit_amount{/*total amount of credits*/
+  background-color: #67BEF4;
+  border-radius: 5px;
+  margin: auto;
+  display: inline-flex;
+  padding: 0px 3%;
+}
+.credit_amount h1{
+  align-self: center;
+}
+.chest_image{/*image of chest. shows more details for our credits rewards system*/
+  margin:1%;
+  background-color: whitesmoke;
+  border-radius: 100%;
+  border:  #A08ABF dashed 2px;
+}
+.token_amount{/*space for user input to buy credits*/
+  background-color: white;
+  max-width: 100px;
+  min-width: 50px;
+  border: none;
+  padding: 3%;
+  display: inline-flex;
+  border-radius: 5px;
+}
+.buy_tokens{/*button that leads to checkout*/
+  background-color: #4BBF5C;
+  color: white;
+  display: inline-block;
+  border: black dashed 1px;
+  margin: 2%;
+  font-family: proxima-nova;
+  font-size: 1rem;
+  text-align: center;
+}
+.view_combos{/*button that shows available combos*/
+  background-color: #b2b2b2	;
+  color: black;
+  display: inline-block;
+  border: black dashed 1px;
+  margin: 2%;
+  font-family: proxima-nova;
+  font-size: 1rem;
+}
+.buy_buttons_pop{/*general container for quick purchase buttons*/
+  display: inline-flex;
+  width: 100%;
+  height: auto;
+}
+.token_pop_amount{/*total dollar equivalence of selected tokens*/
+  display: flex;
+  width: 50%;
+  flex-basis: 200px;
+  font-family: proxima-nova;
+  font-size: 1rem;
+  text-align: center;
+  margin: 1% 20% 1% 20%;
+  padding: 2%;
+}
+
+.token_pop_title{/*text for pop title*/
+  font-family: hwt-artz;
+  font-size: 1.2rem;
+  width: 100%;
+  max-width: 300px;
+  min-width: 250px;
+  display: inline-flex;
+}
+#credit_price{/*general container for quick-purchase menu*/
+  border-left:#6f6f6f double 2px;
+  padding: 3%;
+  background-color: #dedede;
+  min-width: 160px;
+  max-width: 260px;
+  min-height: 50px;
+  max-height: 200px;
+  display: none;
+}
+#credit_price img{
+  display: inline-flex;
+  margin: 1% 3% 1% 1%;
+}
+.mover{/*general name for a container*/
+  margin: auto;
+}
+.amount_tokens{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#purchase_credits{ /*button with plus sign that engages the quick purchase menu*/
+  background-color: transparent;
+  border: none;
+}
+
+.post_order{/*button that dictates order at which posts are displayed*/
+  min-width: 90px;
+  max-width: 160px;
+  height: auto;
+  max-height: 30px;
+  width: 90%;
+  display: inline-flex;
+  background-color: whitesmoke;
+  border-radius: 0px 0px 3px 3px;
+  padding: .5%;
+  border: none;
+  margin: 2%;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+.post_order button{
+  background-color: white;
+  border: none;
+  width: 100%;
+  min-width: 90px;
+  max-width: 160px;
+  min-height: 30px;
+  height: auto;
+  display: inline-flex;
+  border-radius: 3px;
+}
+
+.post_order h1{
+  align-self: center;
+  font-family: museo-sans-rounded;
+  font-weight: 700;
+  margin: .5%;
+  font-size: 0.98rem;
+}
+.post_order img{
+  flex-basis: 50px;
+  min-width: 5px;
+  max-width: 20px;
+  min-height: 5px;
+  max-height: 20px;
+  display: inline;
+  align-self: center;
+  margin-left: 10%;
+}
+
+#post_order_arrow{ /*image of arrow next to "sort by"*/
+  position: relative;
+  border-spacing: 0px;
+}
+
+#order_options h1{
+  align-self: center;
+  font-family: museo-sans-rounded;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: .5%;
+}
+
+#order_options{ /*sorting options*/
+  flex-wrap: nowrap;
+  min-width: 100px;
+  max-width: 110px;
+  height: auto;
+  width: 20%;
+  display: block;
+  border-radius: 0px 0px 3px 3px;
+  padding: .5%;
+  background-color: whitesmoke;
+  display: none;
+}
+#order_options button{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  margin:1%;
+  min-width: 130px;;
+  border-top: #dedede 1px dashed;
+  align-self: center;
+}
+.general_post_order{ /*button background and container*/
+  background-color: whitesmoke;
+  width: 20%;
+  min-width: 100px;
+  max-width: 160px;
+  height: 20%;
+  min-height: 40px;
+  border-radius: 0px 0px 3px 3px;
+}
+@media only screen and (max-width: 750px) {
+  .post_order button{
+    min-width: 150px;
+    max-width: 200px;
+  }
+  .general_post_order{
+    min-width: 150px;
+    max-width: 200px;
+  }
+}
+
+/*posts css below*/
+
+.post_space{ /*space where posts are allowed to appear*/
+  height: 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.post{ /*every post shares this CSS and these scale specs*/
+  box-sizing: border-box;
+  max-width: 512px;
+  height: auto;
+  max-height: 712px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin: 5% 0.64%; 
+}
+/*
+@media only screen and (min-width: 1053px) and (max-width: 1599px) {
+  .post_space{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 2%; 
+    box-sizing: border-box;
+    display: -webkit-inline-box;
+    overflow: scroll;
+  }
+}
+*/
+.post_header{ /*every post has a header*/
+  width: 100%;
+  height: 50px; 
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+.profile_picture{
+  background-image: url("https://i1.sndcdn.com/avatars-000633195468-kwaofm-t500x500.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20%;
+  height: 50px; 
+  border-radius: 3px;
+  border-right: dashed 1px whitesmoke;
+}
+.profile_picture img{
+  image-resolution: 300dpi;
+  max-width: 100%;
+  height: 100%;
+}
+.post_title{
+  width: 60%;
+  font-family: museo-sans-rounded;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
+  align-self: center;
+  overflow: hidden;
+}
+.post_title h2{
+  overflow: hidden;
+}
+#highest_reaction{ /*rectangle with highest reaction*/
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Twemoji_1f600.svg/600px-Twemoji_1f600.svg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%; 
+  border-radius: 3px;
+  background-color: #dedede;
+  border: black dashed 1px;
+}
+.reactionContainer{
+  width: 20%;
+  height: 50px; 
+  border-radius: 3px;
+  background-color: #dedede;
+  }
+.reactionContainer button{
+  width: 100%;
+  height: 100px; 
+  border-radius: 3px;
+  background-color: #dedede;
+}
+.post_content{
+  /*example content*/background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5d25760a183e40380c0b6efd/65bf0f776a9369882b724d904da9f8e6/Comp_2_1.gif");
+  image-resolution: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; 
+  height: auto;
+  border-radius: 3px;
+  min-width: 100px;
+  max-width: 512px; /*due to 16:9 stadards*/
+  min-height: 100px;
+  max-height: 612px;
+  overflow: hidden;
+}
+
+.post_footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+}
+.top_hashtags{
+  font-family: museo-sans-rounded;
+  font-weight: 300;
+  font-size: 1.1rem;
+  text-align: center;
+  align-self: center;
+  width: 60%;
+  height: auto;
+}
+.top_hashtags:hover h2{
+  font-weight: 700;
+}
+
+#save_to_button{
+  width: 20%;
+  background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5d313074d7d3ee4c1da9b880/d56afe642bd9a53cc5be457339c9e1f4/0dbe6834-d3d4-4e7a-9a7f-8eb4349fd73f_(0120).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#save_to_button button{
+    border: none;
+    width: 100%;
+    background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5d313074d7d3ee4c1da9b880/dd556f565d16b831750fa18df79681d5/0dbe6834-d3d4-4e7a-9a7f-8eb4349fd73f_(0000).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #dedede;
+    border-right: #c8c8c8 double 1px ;
+    border-left: #c8c8c8 double 1px ;
+    border-radius: 3px;
+}
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+.saveButtonClick button:focus{
+  animation: fadeOut 2s ease 2s 1 normal forwards;
+  border: none;
+  width: 100%;
+  height: 30px;
+  background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5d313074d7d3ee4c1da9b880/73d95e4bccbb497db76ef95917150343/0dbe6834-d3d4-4e7a-9a7f-8eb4349fd73f_1.gif") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white !important;
+}
+
+.saveButtonClick button{
+    background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5d313074d7d3ee4c1da9b880/d56afe642bd9a53cc5be457339c9e1f4/0dbe6834-d3d4-4e7a-9a7f-8eb4349fd73f_(0120).png") !important;
+    background-color: #f5f5f5 !important;
+    border: none !important;
+  }
+
+
+
+  #reHump{
+    width: 20%;
+    background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0f25ec6ce3946de706e219/ee19f9ae21465e809da3ea0a07ee9e11/Re-Hump_(0030).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+  }
+  #reHump button{
+      border: none;
+      width: 100%;
+      background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0f25ec6ce3946de706e219/0b0e84e68e75b217c33da04efa0c1fb8/Re-Hump_(0000).png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #dedede;
+      border-right: #c8c8c8 double 1px ;
+      border-left: #c8c8c8 double 1px ;
+      border-radius: 3px;
+  }
+  .reHumpButtonClick button:focus{
+    animation: fadeOut 1.043s ease 1.043s 1 normal forwards;
+    background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0f25ec6ce3946de706e219/3c56465d30b6de7715c2a397d7adf5fd/Re-Hump_4.gif") !important;
+    background-color: white !important;
+  }
+  
+  .reHumpButtonClick button{
+      background-image: url("https://trello-attachments.s3.amazonaws.com/5c0b0627b732e12622071af5/5c0f25ec6ce3946de706e219/ee19f9ae21465e809da3ea0a07ee9e11/Re-Hump_(0030).png") !important;
+      background-color: whitesmoke !important;
+      border: none !important;
+    }
+
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.3333%;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+
+  }
+}
+#emoteMenu{
+  overflow-wrap: normal;
+  float: initial;
+  overflow: visible;
+}
+
+.reactMenu{
+  width: 80%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  box-sizing: border-box;
+  position: relative;
+}
+#reactMenuContainer{
+  display: none;
+}
+
+.flagGeneral{
+  width: 33.333%;
+  height: auto; 
+  margin: 1%;
+  display: inline;
+}
+#flag{
+  background-image: url("https://image.flaticon.com/icons/svg/148/148882.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%; 
+  border-radius: 5px 20px 5px;
+  background-color: #A08ABF;
+  border: #dedede dashed 1px;
+}
+#flagMenu button{
+  background-color: #A08ABF;
+  border: none;
+  width: 100%;
+  min-width: 90px;
+  max-width: 160px;
+  min-height: 30px;
+  height: auto;
+  border-radius: 3px;
+  color: white;
+  border: black solid 1px;
+  text-align: left;
+}
+#flagMenu{
+  position: relative;
+  top: 1px;
+  width: 100%;
+  font-family: museo-sans-rounded;
+  font-weight: 300;
+  font-size: 1rem;
+  display: none;
+}
+.verifyGeneral{
+  width: 33.333%;
+  height: auto; 
+  margin: 1%;
+  display: inline;
+}
+#verify{
+  background-image: url("https://image.flaticon.com/icons/svg/59/59508.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%; 
+  border-radius: 5px 20px 5px;
+  background-color: #4BBF5C;
+  border: #dedede dashed 1px;
+}
+#verifyMenu button{
+  background-color: #4BBF5C;
+  border: none;
+  width: 100%;
+  min-width: 90px;
+  max-width: 160px;
+  min-height: 30px;
+  height: auto;
+  display: inline-flex;
+  border-radius: 3px;
+  color: white;
+  border: black solid 1px;
+  text-align: center;
+}
+#verifyMenu{
+  display: none;
+  position: relative;
+  top: 1px;
+  width: 100%;
+  background-color: #dedede;
+  font-family: museo-sans-rounded;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.emoteGeneral{
+  width: 33.333%;
+  height: auto; 
+  margin: 1%;
+  display: inline;
+  z-index: 1;
+}
+#emote{
+  background-image: url("http://cdn.onlinewebfonts.com/svg/download_201721.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%; 
+  border-radius: 5px 20px 5px;
+  background-color: #67BEF4;
+  border: #dedede dashed 1px;
+  z-index: 1;
+}
+#emoteMenu button{
+  background-color: #67BEF4;
+  border: none;
+  width: 100%;
+  min-width: 90px;
+  max-width: 160px;
+  min-height: 30px;
+  height: auto;
+  display: inline-flex;
+  border-radius: 3px;
+  color: white;
+  border: black solid 1px;
+  text-align: left;
+  z-index: 1;
+}
+#emoteMenu{
+  position: relative;
+  top: 1px;
+  width: auto;
+  height: auto;
+  font-family: museo-sans-rounded;
+  font-weight: 300;
+  font-size: 1rem;
+  z-index: 1;
+  display: none;
+}
+
+.Joy{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Twemoji_1f600.svg/600px-Twemoji_1f600.svg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.Love{
+  background-image: url("https://cdn.iconscout.com/icon/free/png-256/eye-face-love-smile-heart-emoji-37674.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.Sad{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Emojione_1F62D.svg/768px-Emojione_1F62D.svg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.Angry{
+  background-image: url("https://cdn4.iconfinder.com/data/icons/smileys-for-fun/128/smiley__6-512.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.Thonk{
+  background-image: url("https://images.emojiterra.com/twitter/v11/512px/1f914.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.Shock{
+  background-image: url("https://cdn4.iconfinder.com/data/icons/reaction/32/surprise-512.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@keyframes scaleUp{
+  from {width: 100%; height: auto;}
+  to {width: 100%; height: 60px;}
+}
+.react:hover{
+  animation: scaleUp 0s ease 0s 1 normal both;
+  -webkit-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  -moz-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  -ms-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  -o-box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+  box-shadow: 0px 6px 6px 0px rgba(213,213,213,0.6);
+}
+/*start of code ADAPTED from https://cssfx.dev/ */
+.react {
+  z-index: 1;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(236, 32%, 26%);
+}
+.react:hover {
+  cursor: pointer;
+}
+.react:focus {
+  border: whitesmoke solid 2px;
+  animation: jelly 0.5s both;
+}
+
+@keyframes jelly {
+  0% {width: 100%; height: 60px;}
+  100% {width: 100%; height: 60px;}
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+/*end of code ADAPTED from https://cssfx.dev/ */
+.warning{
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .warning{
+    display: block;
+    width: 100%;
+  }
+  .warning img{
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    display: block;
+  }
+  .warning p{
+    text-align: center;
+    font-family: museo-sans-rounded;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 2%;
+  }
+  .warning p em{
+    text-align: center;
+    font-family: museo-sans-rounded;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .warning button{
+    margin: 5% 30%;
+    background-color: #A08ABF;
+    color: white;
+  }
+  header, .main_header, .tab_menu, .finances_header, .post_space, .storiesContainer {
+    display: none;
+  }
+}
