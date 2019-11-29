@@ -1,0 +1,52 @@
+#trending_button{
+  color: black;
+}
+.post_footer{
+  height: 30px; 
+}
+.crown{/*Only appears on the trending page*/
+    background-image: url("https://maxcdn.icons8.com/Color/PNG/512/Messaging/crown-512.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    bottom: 33px;
+    left: 30px;
+  }
+
+  @media only screen and (max-width: 500px){
+    .crown{
+      background-image: url("https://maxcdn.icons8.com/Color/PNG/512/Messaging/crown-512.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: relative;
+      width: 30px;
+      height: 30px;
+      bottom: 33px;
+      left: 30px;
+    }
+  }
+  .post_space{ /*space where posts are allowed to appear*/
+    width: 100%;
+  }
+  .reactMenu{
+    position: relative;
+    left: 100px;
+  }
+  #reHump button{
+    background-size: 50%;
+    height: 30px;
+  }
+  #reHump{
+    background-size: 50%;
+    height: 30px;
+  }
+  #save_to_button{
+    height: 30px;
+  }
+  #save_to_button button{
+      height: 30px;
+  }
